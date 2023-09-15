@@ -1,6 +1,10 @@
 " load core config
 function! s:get_config_path(path_name)
-    return '~/.config/vim/' .. a:path_name
+    if has('mac')
+    	return '~/.config/vim/' .. a:path_name
+    elseif has('unix')
+    	return '~/.vim/' .. a:path_name
+    endif
 endfunction
 
 for file in split(glob(s:get_config_path('core/*.vim')), '\n')
