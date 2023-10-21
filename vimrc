@@ -4,6 +4,8 @@ function! s:get_config_path(path_name)
     	return '~/.config/vim/' .. a:path_name
     elseif has('unix')
     	return '~/.vim/' .. a:path_name
+    elseif has('win32')
+        return '~\vimfiles\' .. a:path_name
     endif
 endfunction
 
@@ -14,13 +16,7 @@ endfor
 """ My plug
 call plug#begin()
 Plug 'tomasr/molokai'
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
 Plug 'Bakudankun/qline.vim'
-
-Plug 'Shougo/defx.nvim'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
 
 " code snippets
 Plug 'honza/vim-snippets'
@@ -33,6 +29,7 @@ Plug 'Eliot00/auto-pairs'
 
 " exploer tree
 Plug 'ryanoasis/vim-devicons'
+Plug 'preservim/nerdtree'
 
 " lsp
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -64,6 +61,9 @@ Plug '/opt/homebrew/opt/fzf'
 " tags
 Plug 'ludovicchabant/vim-gutentags'
 
+" highlighting improvements
+Plug 'sheerun/vim-polyglot'
+
 call plug#end()
 
 " colorscheme
@@ -82,4 +82,5 @@ endif
 
 " Language specific settings
 autocmd FileType c,cpp source ~/.vim/lang/c_cpp.vim
+autocmd FileType c,cpp source ~/.vim/syntax/c.vim
 autocmd FileType haskell source ~/.vim/lang/haskell.vim
