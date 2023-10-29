@@ -10,7 +10,6 @@ set shiftwidth=4
 set scrolloff=5
 
 set wrap
-set showcmd
 set wildmenu " display a menu when enter vim command
 set smartcase
 set nocompatible
@@ -25,6 +24,7 @@ set sms
 set backspace=indent,eol,start
 set foldmethod=manual
 set autoindent
+set showcmd
 
 filetype on
 filetype indent on

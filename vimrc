@@ -1,4 +1,3 @@
-" load core config
 function! s:get_config_path(path_name)
     if has('mac')
     	return '~/.config/vim/' .. a:path_name
@@ -17,6 +16,7 @@ endfor
 call plug#begin()
 Plug 'tomasr/molokai'
 Plug 'Bakudankun/qline.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " code snippets
 Plug 'honza/vim-snippets'
@@ -25,7 +25,6 @@ Plug 'honza/vim-snippets'
 Plug 'tpope/vim-surround'
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-unimpaired'
-Plug 'Eliot00/auto-pairs'
 
 " exploer tree
 Plug 'ryanoasis/vim-devicons'
@@ -36,6 +35,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'keith/swift.vim', {'for': 'swift'}
 Plug 'arzg/vim-swift', {'for': 'swift'}
 Plug 'neovimhaskell/haskell-vim'
+
 
 " Github Copilot
 Plug 'github/copilot.vim'
@@ -64,6 +64,8 @@ Plug 'ludovicchabant/vim-gutentags'
 " highlighting improvements
 Plug 'sheerun/vim-polyglot'
 
+Plug 'vim-scripts/a.vim'
+
 call plug#end()
 
 " colorscheme
@@ -71,6 +73,10 @@ exe 'colorscheme ' .. color_name
 
 " add modules
 for file in split(glob(<SID>get_config_path('modules/*.vim')), '\n')
+    exe 'source' file
+endfor
+
+for file in split(glob(<SID>get_config_path('config/plugin/*.vim')), '\n')
     exe 'source' file
 endfor
 

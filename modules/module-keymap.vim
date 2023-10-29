@@ -15,10 +15,9 @@ map <A-k> :wincmd j<CR>
 map <A-l> :wincmd k<CR>
 map <A-;> :wincmd l<CR>
 
-map <LEADER>u :tabe<CR>
-map <LEADER>K :-tabnext<CR>
-map <LEADER>L :+tabnext<CR>
+map <c-u> :tabe<CR>
+map <c-k> :-tabnext<CR>
+map <c-l> :+tabnext<CR>
 
 " close the quickfix window
 noremap <silent> <leader>qc :cclose<CR>
-

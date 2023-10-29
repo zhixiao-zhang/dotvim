@@ -1,5 +1,4 @@
 {
-  "coc.preferences.extensionUpdateCheck": "weekly",
   "rust-analyzer.updates.prompt": false,
   "rust-analyzer.server.path": "~/.config/coc/extensions/coc-rust-analyzer-data/rust-analyzer",
   "suggest.noselect": true,
@@ -33,19 +32,20 @@
     "variable": "\ue71b"
   },
   "suggest.virtualText": true,
+  "suggest.enableFloat": true,
+  "suggest.floatConfig": {
+    "border": true,
+    "rounded": true
+  },
   "diagnostic.errorSign": "\uf467",
   "diagnostic.warningSign": "\uf071",
   "diagnostic.infoSign": "\uf129",
   "diagnostic.hintSign": "\uf864",
   "diagnostic.refreshOnInsertMode": false,
   "diagnostic.checkCurrentLine": true,
-  "diagnostic.virtualTextPrefix": " ❯❯❯ ",
-  "diagnostic.virtualText": true,
+  "diagnostic.virtualText": false,
   "diagnostic.enableMessage": "always",
-  "diagnostic.floatConfig": {
-    "border": true,
-    "rounded": true
-  },
+  "clangd.disableDiagnostics": true,
   "codeLens.enable": true,
   "coc.preferences.formatOnSave": true,
   "rust-analyzer.completion.snippets.custom": {
@@ -117,7 +117,9 @@
     "swift": {
       "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp",
       "args": [],
-      "filetypes": ["swift"],
+      "filetypes": [
+        "swift"
+      ],
       "initializationOptions": {},
       "settings": {}
     }
