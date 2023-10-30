@@ -16,7 +16,6 @@ endfor
 call plug#begin()
 Plug 'tomasr/molokai'
 Plug 'Bakudankun/qline.vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
 
 " code snippets
 Plug 'honza/vim-snippets'
