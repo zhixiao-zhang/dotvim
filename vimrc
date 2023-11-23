@@ -14,9 +14,8 @@ endfor
 
 """ My plug
 call plug#begin()
-Plug 'tomasr/molokai'
 Plug 'Bakudankun/qline.vim'
-Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'blueshirts/darcula'
 
 " code snippets
 Plug 'honza/vim-snippets'
@@ -32,26 +31,16 @@ Plug 'preservim/nerdtree'
 
 " lsp
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'keith/swift.vim', {'for': 'swift'}
-Plug 'arzg/vim-swift', {'for': 'swift'}
 Plug 'neovimhaskell/haskell-vim'
-
 
 " Github Copilot
 Plug 'github/copilot.vim'
-
-" tasks
-Plug 'skywind3000/asynctasks.vim'
-Plug 'skywind3000/asyncrun.vim'
 
 " leaderf
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 
 " nerdcommenter
 Plug 'preservim/nerdcommenter'
-
-" vimspector
-Plug 'puremourning/vimspector'
 
 " terminal help
 Plug 'skywind3000/vim-terminal-help'
@@ -63,8 +52,6 @@ Plug 'ludovicchabant/vim-gutentags'
 
 " highlighting improvements
 Plug 'sheerun/vim-polyglot'
-
-Plug 'vim-scripts/a.vim'
 
 call plug#end()
 

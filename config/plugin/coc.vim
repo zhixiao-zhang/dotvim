@@ -140,6 +140,4 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 " NOTE: do NOT use `nore` mappings
 command! -nargs=0 Prettier :call CocActionAsync('runCommand', 'prettier.formatFile')
 
-" coc-markdown-preview-enhanced
-" NOTE: do NOT use `nore` mappings
-map <Leader>mp :CocCommand markdown-preview-enhanced.openPreview<CR>
+nnoremap <silent><nowait> <space>hs :<C-u>CocCommand clangd.switchSourceHeader<CR>

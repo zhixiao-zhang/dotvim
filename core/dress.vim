@@ -3,7 +3,7 @@ set background=dark
 if has('termguicolors')
     set termguicolors
 endif
-let color_name = 'molokai'
+let color_name = 'darcula'
 let g:rehash256 = 1
 " transparent
 hi Normal ctermbg = NONE

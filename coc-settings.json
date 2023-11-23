@@ -45,7 +45,7 @@
   "diagnostic.checkCurrentLine": true,
   "diagnostic.virtualText": false,
   "diagnostic.enableMessage": "always",
-  "clangd.disableDiagnostics": true,
+  "clangd.disableDiagnostics": false,
   "codeLens.enable": true,
   "coc.preferences.formatOnSave": true,
   "rust-analyzer.completion.snippets.custom": {
@@ -113,15 +113,4 @@
   "colors.enable": true,
   "html.format.enable": true,
   "html.format.wrapLineLength": 80,
-  "languageserver": {
-    "swift": {
-      "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/sourcekit-lsp",
-      "args": [],
-      "filetypes": [
-        "swift"
-      ],
-      "initializationOptions": {},
-      "settings": {}
-    }
-  }
 }
