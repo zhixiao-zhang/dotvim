@@ -1,10 +1,8 @@
 {
-  "rust-analyzer.updates.prompt": false,
-  "rust-analyzer.server.path": "~/.config/coc/extensions/coc-rust-analyzer-data/rust-analyzer",
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
   "suggest.detailField": "preview",
-  "suggest.completionItemKindLabels": {
+  /*"suggest.completionItemKindLabels": {
     "class": "\uf0e8",
     "color": "\ue22b",
     "constant": "\uf8fe",
@@ -30,13 +28,7 @@
     "unit": "\uf475",
     "value": "\uf89f",
     "variable": "\ue71b"
-  },
-  "suggest.virtualText": true,
-  "suggest.enableFloat": true,
-  "suggest.floatConfig": {
-    "border": true,
-    "rounded": true
-  },
+  }, */
   "diagnostic.errorSign": "\uf467",
   "diagnostic.warningSign": "\uf071",
   "diagnostic.infoSign": "\uf129",
@@ -45,50 +37,10 @@
   "diagnostic.checkCurrentLine": true,
   "diagnostic.virtualText": false,
   "diagnostic.enableMessage": "always",
-  "clangd.disableDiagnostics": false,
+  "clangd.disableDiagnostics": true,
+  "inlayHint.enable": false,
   "codeLens.enable": true,
   "coc.preferences.formatOnSave": true,
-  "rust-analyzer.completion.snippets.custom": {
-    "Arc::new": {
-      "postfix": "arc",
-      "body": "Arc::new(${receiver})",
-      "requires": "std::sync::Arc",
-      "description": "Put the expression into an `Arc`",
-      "scope": "expr"
-    },
-    "Rc::new": {
-      "postfix": "rc",
-      "body": "Rc::new(${receiver})",
-      "requires": "std::rc::Rc",
-      "description": "Put the expression into an `Rc`",
-      "scope": "expr"
-    },
-    "Box::pin": {
-      "postfix": "pinbox",
-      "body": "Box::pin(${receiver})",
-      "requires": "std::boxed::Box",
-      "description": "Put the expression into a pinned `Box`",
-      "scope": "expr"
-    },
-    "Ok": {
-      "postfix": "ok",
-      "body": "Ok(${receiver})",
-      "description": "Wrap the expression in a `Result::Ok`",
-      "scope": "expr"
-    },
-    "Err": {
-      "postfix": "err",
-      "body": "Err(${receiver})",
-      "description": "Wrap the expression in a `Result::Err`",
-      "scope": "expr"
-    },
-    "Some": {
-      "postfix": "some",
-      "body": "Some(${receiver})",
-      "description": "Wrap the expression in an `Option::Some`",
-      "scope": "expr"
-    }
-  },
   "snippets.ultisnips.enable": true,
   "snippets.ultisnips.directories": [
     "UltiSnips",
@@ -111,6 +63,19 @@
   "python.formatting.yapfPath": "/opt/homebrew/bin/yapf",
   "snippets.ultisnips.pythonPrompt": false,
   "colors.enable": true,
-  "html.format.enable": true,
-  "html.format.wrapLineLength": 80,
+  "languageserver": {
+    "ocaml-lsp": {
+      "command": "opam",
+      "args": [
+        "config",
+        "exec",
+        "--",
+        "ocamllsp"
+      ],
+      "filetypes": [
+        "ocaml",
+        "reason"
+      ]
+    }
+  }
 }

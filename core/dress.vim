@@ -1,4 +1,4 @@
-set laststatus=2
+set laststatus=0
 set background=dark
 if has('termguicolors')
     set termguicolors
@@ -7,6 +7,7 @@ let color_name = 'darcula'
 let g:rehash256 = 1
 " transparent
 hi Normal ctermbg = NONE
+hi Normal guibg = NONE
 
 let g:airline_theme = 'default'
 

@@ -14,44 +14,36 @@ endfor
 
 """ My plug
 call plug#begin()
-Plug 'Bakudankun/qline.vim'
+
+"""""""""""""""""""""""""
+"""    Colorscheme    """
+"""""""""""""""""""""""""
 Plug 'blueshirts/darcula'
 
-" code snippets
-Plug 'honza/vim-snippets'
-
-" Simplifying choosing context
+"""""""""""""""""""""""""
+""" Input enhancement """
+"""""""""""""""""""""""""
 Plug 'tpope/vim-surround'
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-unimpaired'
+Plug 'LunarWatcher/auto-pairs'
 
-" exploer tree
-Plug 'ryanoasis/vim-devicons'
-Plug 'preservim/nerdtree'
-
-" lsp
+"""""""""""""""""""""""""
+""" Language  Support """
+"""""""""""""""""""""""""
+"   lsp
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'neovimhaskell/haskell-vim'
-
-" Github Copilot
-Plug 'github/copilot.vim'
-
-" leaderf
-Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-
-" nerdcommenter
-Plug 'preservim/nerdcommenter'
-
-" terminal help
-Plug 'skywind3000/vim-terminal-help'
-
-Plug '/opt/homebrew/opt/fzf'
-
-" tags
+"   tags
 Plug 'ludovicchabant/vim-gutentags'
-
 " highlighting improvements
 Plug 'sheerun/vim-polyglot'
+"   Github Copilot
+Plug 'github/copilot.vim'
+"   FZF and LeaderF
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+Plug '/opt/homebrew/opt/fzf'
+"   code snippets
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -77,3 +69,4 @@ endif
 autocmd FileType c,cpp source ~/.vim/lang/c_cpp.vim
 autocmd FileType c,cpp source ~/.vim/syntax/c.vim
 autocmd FileType haskell source ~/.vim/lang/haskell.vim
+autocmd FileType ocaml source ~/.vim/lang/ocaml.vim
