@@ -136,8 +136,4 @@ nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
-" coc-prettier
-" NOTE: do NOT use `nore` mappings
-command! -nargs=0 Prettier :call CocActionAsync('runCommand', 'prettier.formatFile')
-
 nnoremap <silent><nowait> <space>hs :<C-u>CocCommand clangd.switchSourceHeader<CR>
