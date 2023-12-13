@@ -10,10 +10,10 @@ map sk :set splitbelow<CR>:split<CR>
 map sj :set nosplitright<CR>:vsplit<CR>
 map s; :set splitright<CR>:vsplit<CR>
 
-map <A-j> :wincmd h<CR>
-map <A-k> :wincmd j<CR>
-map <A-l> :wincmd k<CR>
-map <A-;> :wincmd l<CR>
+map <leader>j :wincmd h<CR>
+map <leader>k :wincmd j<CR>
+map <leader>l :wincmd k<CR>
+map <leader>; :wincmd l<CR>
 
 map <c-u> :tabe<CR>
 map <c-k> :-tabnext<CR>
