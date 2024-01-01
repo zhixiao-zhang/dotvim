@@ -1,9 +1,8 @@
 set laststatus=0
-set background=dark
 if has('termguicolors')
     set termguicolors
 endif
-let color_name = 'darcula'
+let color_name = 'light-pink'
 let g:rehash256 = 1
 " transparent
 hi Normal ctermbg = NONE
