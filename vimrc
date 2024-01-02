@@ -14,12 +14,6 @@ endfor
 
 """ My plug
 call plug#begin()
-
-"""""""""""""""""""""""""
-"""    Colorscheme    """
-"""""""""""""""""""""""""
-Plug 'blueshirts/darcula'
-
 """""""""""""""""""""""""
 """ Input enhancement """
 """""""""""""""""""""""""

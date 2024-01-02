@@ -37,6 +37,7 @@ hi PmenuThumb ctermfg=59 ctermbg=NONE guifg=NONE guibg=#8e9292
 hi ErrorMsg ctermfg=15 ctermbg=88 cterm=NONE guifg=#ffffff guibg=#990000 gui=NONE
 hi CursorColumn guifg=NONE guibg=#CDC9C9
 hi SignColumn guibg=#f5f5f5
+hi NonText guifg=#f5f5f5
 
 " Coc highlight setting
 hi CocMenuSel term=reverse guifg=NONE guibg=#EDE8FD gui=NONE

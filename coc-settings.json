@@ -1,4 +1,10 @@
 {
+  "workspace.rootPatterns": [
+    ".git",
+    ".hg",
+    ".projections.json",
+    ".root"
+  ],
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
   "suggest.detailField": "preview",
@@ -19,7 +25,6 @@
     "UltiSnips",
     "$HOME/.local/share/nvim/plugged/vim-snippets/UltiSnips"
   ],
-  "clangd.compilationDatabasePath": "${workspace.rootPatterns}/.compile_info/",
   "clangd.arguments": [
     "--background-index",
     "--clang-tidy",
@@ -28,6 +33,7 @@
     "--completion-style=detailed",
     "--header-insertion=iwyu",
     "--pch-storage=disk",
+    "--compile-commands-dir=${workspaceFolder}/.compile_info",
   ],
   "signature.enable": true,
   "pyright.inlayHints.variableTypes": true,
