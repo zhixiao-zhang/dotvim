@@ -1,4 +1,10 @@
 {
+  "workspace.rootPatterns": [
+    ".git",
+    ".hg",
+    ".projections.json",
+    ".root"
+  ],
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
   "suggest.detailField": "preview",
@@ -8,9 +14,9 @@
   "diagnostic.hintSign": "\uf864",
   "diagnostic.refreshOnInsertMode": false,
   "diagnostic.checkCurrentLine": true,
-  "diagnostic.virtualText": false,
-  "diagnostic.enableMessage": "always",
-  "clangd.disableDiagnostics": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.enableMessage": "never",
+  "clangd.disableDiagnostics": false,
   "inlayHint.enable": false,
   "codeLens.enable": true,
   "coc.preferences.formatOnSave": false,
@@ -19,7 +25,6 @@
     "UltiSnips",
     "$HOME/.local/share/nvim/plugged/vim-snippets/UltiSnips"
   ],
-  "clangd.compilationDatabasePath": ".compile_info/",
   "clangd.arguments": [
     "--background-index",
     "--clang-tidy",
@@ -27,7 +32,8 @@
     "--all-scopes-completion",
     "--completion-style=detailed",
     "--header-insertion=iwyu",
-    "--pch-storage=disk"
+    "--pch-storage=disk",
+    "--compile-commands-dir=${workspaceFolder}/.compile_info",
   ],
   "signature.enable": true,
   "snippets.ultisnips.pythonPrompt": false,
@@ -46,5 +52,6 @@
         "reason"
       ]
     }
-  }
+  },
+  "semanticTokens.enable": true,
 }

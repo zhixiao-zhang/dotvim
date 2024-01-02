@@ -137,3 +137,6 @@ nnoremap <silent><nowait> <space>s  :<C-u>CocList -I symbols<cr>
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 nnoremap <silent><nowait> <space>hs :<C-u>CocCommand clangd.switchSourceHeader<CR>
+
+"let g:coc_
+let g:coc_default_semantic_highlight_groups=1
