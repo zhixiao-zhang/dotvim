@@ -57,4 +57,10 @@ hi def link vimUsrCmd vimUserCommand
 hi def link vimUserFunc Function
 hi def link vimFunction Function
 
+" statusline
+hi StatusLine guifg=#EDE8FD guibg=#E17092 gui=bold
+hi StatusLineNC guifg=#EDE8FD guibg=#E17092 gui=bold
+hi StatusLineSeparator guifg=#f5f5f5
+hi User1 guifg=#B08B35 guibg=#EDE8FD
+
 set background=light
