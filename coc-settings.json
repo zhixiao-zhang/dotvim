@@ -36,10 +36,6 @@
     "--compile-commands-dir=${workspaceFolder}/.compile_info",
   ],
   "signature.enable": true,
-  "pyright.inlayHints.variableTypes": true,
-  "pyright.inlayHints.functionReturnTypes": true,
-  "python.formatting.provider": "yapf",
-  "python.formatting.yapfPath": "/opt/homebrew/bin/yapf",
   "snippets.ultisnips.pythonPrompt": false,
   "colors.enable": true,
   "languageserver": {
