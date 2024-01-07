@@ -30,7 +30,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "   tags
 Plug 'ludovicchabant/vim-gutentags'
 " highlighting improvements
-Plug 'sheerun/vim-polyglot'
 "   Github Copilot
 Plug 'github/copilot.vim'
 "   FZF and LeaderF
