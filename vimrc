@@ -34,7 +34,6 @@ Plug 'ludovicchabant/vim-gutentags'
 Plug 'github/copilot.vim'
 "   FZF and LeaderF
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-Plug '/opt/homebrew/opt/fzf'
 "   code snippets
 Plug 'honza/vim-snippets'
 
