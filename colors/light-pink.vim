@@ -28,6 +28,7 @@ hi Search ctermfg=188 ctermbg=24 guifg=NONE guibg=#F3D5B9 gui=none
 hi IncSearch term=reverse ctermfg=188 ctermbg=24 guifg=NONE guibg=#F3D5B9 gui=none
 hi String ctermfg=65 ctermbg=NONE cterm=NONE guifg=#1F6E89 guibg=NONE gui=NONE
 hi VertSplit ctermfg=60 ctermbg=236 cterm=NONE guifg=#555555 guibg=#f5f5f5 gui=NONE
+hi Title guifg=#E17092 guibg=NONE gui=bold
 
 hi Pmenu guifg=NONE guibg=#F5F5F5 gui=NONE
 " This attribute is overrided by CocMenuSel
