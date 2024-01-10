@@ -18,6 +18,3 @@ map <leader>; :wincmd l<CR>
 map <c-u> :tabe<CR>
 map <c-k> :-tabnext<CR>
 map <c-l> :+tabnext<CR>
-
-" close the quickfix window
-noremap <silent> <leader>qc :cclose<CR>

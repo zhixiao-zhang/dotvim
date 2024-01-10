@@ -25,6 +25,7 @@ set backspace=indent,eol,start
 set foldmethod=manual
 set autoindent
 set showcmd
+set laststatus=0
 
 filetype on
 filetype indent on
@@ -35,6 +36,10 @@ set hlsearch
 set incsearch
 exec "nohlsearch"
 noremap <LEADER><CR> :nohlsearch<CR>
+
+if has('termguicolors')
+    set termguicolors
+endif
 
 augroup Format-Options
     autocmd!

@@ -33,7 +33,7 @@
     "--completion-style=detailed",
     "--header-insertion=iwyu",
     "--pch-storage=disk",
-    "--compile-commands-dir=${workspaceFolder}/.compile_info",
+    "--compile-commands-dir=${workspaceFolder}/.compile_info"
   ],
   "signature.enable": true,
   "snippets.ultisnips.pythonPrompt": false,
@@ -53,5 +53,6 @@
       ]
     }
   },
-  "semanticTokens.enable": true,
+  "semanticTokens.enable": true
+  "list.source.symbols.defaultArgs": []
 }
