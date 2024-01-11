@@ -16,7 +16,7 @@
   "diagnostic.checkCurrentLine": true,
   "diagnostic.virtualText": true,
   "diagnostic.enableMessage": "never",
-  "clangd.disableDiagnostics": false,
+  "clangd.disableDiagnostics": true,
   "inlayHint.enable": false,
   "codeLens.enable": true,
   "coc.preferences.formatOnSave": false,
@@ -54,5 +54,4 @@
     }
   },
   "semanticTokens.enable": true
-  "list.source.symbols.defaultArgs": []
 }
