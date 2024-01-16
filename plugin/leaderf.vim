@@ -2,7 +2,7 @@
 " popup window
 let g:Lf_WindowPosition = 'popup'
 let g:Lf_PreviewInPopup = 1
-let g:Lf_CommandMap = {'<C-J>': ['<Up>', '<C-K>'], '<C-K>': ['<Down>', '<C-L>']}
+let g:Lf_CommandMap = {'<C-J>': ['<Down>', '<C-K>'], '<C-K>': ['<Up>', '<C-L>']}
 
 " mapping
 nnoremap <silent> <leader>ff :LeaderfFile<CR>

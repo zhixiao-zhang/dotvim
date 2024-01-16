@@ -6,7 +6,6 @@ call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-unimpaired'
-Plug 'LunarWatcher/auto-pairs'
 
 """""""""""""""""""""""""
 """ Language  Support """
@@ -15,7 +14,6 @@ Plug 'LunarWatcher/auto-pairs'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 "   tags
 Plug 'ludovicchabant/vim-gutentags'
-" highlighting improvements
 "   Github Copilot
 Plug 'github/copilot.vim'
 "   FZF and LeaderF
