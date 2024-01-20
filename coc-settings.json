@@ -23,7 +23,8 @@
   "snippets.ultisnips.enable": true,
   "snippets.ultisnips.directories": [
     "UltiSnips",
-    "$HOME/.local/share/nvim/plugged/vim-snippets/UltiSnips"
+    "$HOME/.vim/plugged/vim-snippets/UltiSnips",
+    "$HOME/.vim//UltiSnips"
   ],
   "clangd.arguments": [
     "--background-index",
