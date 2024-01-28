@@ -15,7 +15,8 @@ set smartcase
 set nocompatible
 set cursorline
 set hidden
-set updatetime=100
+
+set updatetime=50
 set textwidth=0
 set indentexpr=
 set autochdir
