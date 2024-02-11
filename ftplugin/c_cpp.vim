@@ -20,4 +20,6 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
-au FileType c,cpp setlocal comments-=:// comments+=f://
+syn match cOperator "=\|[=+\-*/<>!&|^]=\|==\|!=\|<=\|>=\|>>\|<<\|&&\|+\|++\|-\|--\|\[\|\]\|>\|<\|&\|*"
+
+au FileType c setlocal comments-=:// comments+=f://
