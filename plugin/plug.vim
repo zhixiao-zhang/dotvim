@@ -6,7 +6,8 @@ call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-unimpaired'
-Plug 'LunarWatcher/auto-pairs'
+Plug 'tpope/vim-eunuch'
+
 
 """""""""""""""""""""""""
 """ Language  Support """
