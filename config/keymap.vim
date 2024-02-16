@@ -3,9 +3,6 @@ noremap k j
 noremap l k
 noremap ; l
 noremap h :
-noremap H ;
-noremap : H
-
 
 map s <nop>
 map sl :set nosplitbelow<CR>:split<CR>
