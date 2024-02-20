@@ -15,8 +15,6 @@ colorscheme light-pink
 " Source general configuration files
 call s:source_files(s:get_config_path('config/*.vim'))
 
-source ~/.vim/autoload/plug-install.vim
-
 " Platform specific settings
 if has('mac')
     let s:path = s:get_config_path('/config/platform/mac.vim')

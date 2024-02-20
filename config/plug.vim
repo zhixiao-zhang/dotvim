@@ -13,7 +13,7 @@ Plug 'tpope/vim-eunuch'
 """ Language  Support """
 """""""""""""""""""""""""
 "   lsp
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'on': 'CocStart'}
 "   tags
 Plug 'ludovicchabant/vim-gutentags'
 "   Github Copilot
@@ -23,4 +23,8 @@ Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 "   code snippets
 Plug 'honza/vim-snippets'
 
+Plug 'sheerun/vim-polyglot'
+
 call plug#end()
+
+command! -nargs=0 CocLoad runtime! autoload/coc.vim
