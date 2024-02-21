@@ -28,3 +28,5 @@ Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 command! -nargs=0 CocLoad runtime! autoload/coc.vim
+
+map <leader>cs :CocStart<CR>:CocLoad<CR>
