@@ -1,6 +1,11 @@
 """ My plug
 call plug#begin()
 """""""""""""""""""""""""
+"""" UI  Enhancement """"
+"""""""""""""""""""""""""
+Plug 'obcat/vim-sclow'
+
+"""""""""""""""""""""""""
 """ Input enhancement """
 """""""""""""""""""""""""
 Plug 'tpope/vim-surround'
