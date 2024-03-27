@@ -1,37 +1,38 @@
-""" My plug
+vim9script
+### My plug
 call plug#begin()
-"""""""""""""""""""""""""
-"""" UI  Enhancement """"
-"""""""""""""""""""""""""
+#########################
+#### UI  Enhancement ####
+#########################
 Plug 'obcat/vim-sclow'
 
-"""""""""""""""""""""""""
-""" Input enhancement """
-"""""""""""""""""""""""""
+#########################
+### Input enhancement ###
+#########################
 Plug 'tpope/vim-surround'
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-eunuch'
 
 
-"""""""""""""""""""""""""
-""" Language  Support """
-"""""""""""""""""""""""""
-"   lsp
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'on': 'CocStart'}
-"   tags
+#########################
+### Language  Support ###
+#########################
+#   lsp
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+#   tags
 Plug 'ludovicchabant/vim-gutentags'
-"   Github Copilot
+#   Github Copilot
 Plug 'github/copilot.vim'
-"   FZF and LeaderF
+#   FZF and LeaderF
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-"   code snippets
+#   code snippets
 Plug 'honza/vim-snippets'
-
+#   highlight
 Plug 'sheerun/vim-polyglot'
+#   latex
+Plug 'lervag/vimtex'
+#   auto-pair
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
-
-command! -nargs=0 CocLoad runtime! autoload/coc.vim
-
-map <leader>cs :CocStart<CR>:CocLoad<CR>

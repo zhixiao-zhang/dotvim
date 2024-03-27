@@ -1,8 +1,9 @@
-"noremap j h
-"noremap k j
-"noremap l k
-"noremap ; l
-"noremap h :
+vim9script
+#noremap j h
+#noremap k j
+#noremap l k
+#noremap ; l
+#noremap h :
 
 map s <nop>
 map sk :set nosplitbelow<CR>:split<CR>
