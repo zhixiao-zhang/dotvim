@@ -1,6 +1,5 @@
 vim9script
-var mapleader = ' '
-
+g:mapleader = ' '
 set number
 set relativenumber
 set encoding=utf-8
