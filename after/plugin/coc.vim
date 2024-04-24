@@ -4,9 +4,7 @@ let g:coc_global_extensions = [
 	  \'coc-vimlsp'
       \]
 
-
 " Don't pass messages to |ins-completion-menu|.
-set shortmess+=c
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -68,40 +66,37 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
-function! s:cocActionsOpenFromSelected(type) abort
-  execute 'CocCommand actions.open' .a:type
-  endfunction
-xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open' . visualmode()<CR>
-nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
+" xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open' . visualmode()<CR>
+" nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
 
 " Run the Code Lens action on the current line.
-nmap <leader>cl  <Plug>(coc-codelens-action)
+" nmap <leader>cl  <Plug>(coc-codelens-action)
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
-xmap if <Plug>(coc-funcobj-i)
-omap if <Plug>(coc-funcobj-i)
-xmap af <Plug>(coc-funcobj-a)
-omap af <Plug>(coc-funcobj-a)
-xmap ic <Plug>(coc-classobj-i)
-omap ic <Plug>(coc-classobj-i)
-xmap ac <Plug>(coc-classobj-a)
-omap ac <Plug>(coc-classobj-a)
+" xmap if <Plug>(coc-funcobj-i)
+" omap if <Plug>(coc-funcobj-i)
+" xmap af <Plug>(coc-funcobj-a)
+" omap af <Plug>(coc-funcobj-a)
+" xmap ic <Plug>(coc-classobj-i)
+" omap ic <Plug>(coc-classobj-i)
+" xmap ac <Plug>(coc-classobj-a)
+" omap ac <Plug>(coc-classobj-a)
 
 " Remap <C-f> and <C-b> for scroll float windows/popups.
-if has('nvim-0.4.0') || has('patch-8.2.0750')
-  nnoremap <silent><nowait><expr> <C-f> coc#float"has_scroll() ? coc#float"scroll(1) : "\<C-f>"
-  nnoremap <silent><nowait><expr> <C-b> coc#float"has_scroll() ? coc#float"scroll(0) : "\<C-b>"
-  inoremap <silent><nowait><expr> <C-f> coc#float"has_scroll() ? "\<c-r>=coc#float"scroll(1)\<cr>" : "\<Right>"
-  inoremap <silent><nowait><expr> <C-b> coc#float"has_scroll() ? "\<c-r>=coc#float"scroll(0)\<cr>" : "\<Left>"
-  vnoremap <silent><nowait><expr> <C-f> coc#float"has_scroll() ? coc#float"scroll(1) : "\<C-f>"
-  vnoremap <silent><nowait><expr> <C-b> coc#float"has_scroll() ? coc#float"scroll(0) : "\<C-b>"
-endif
+" if has('nvim-0.4.0') || has('patch-8.2.0750')
+"   nnoremap <silent><nowait><expr> <C-f> coc#float"has_scroll() ? coc#float"scroll(1) : "\<C-f>"
+"   nnoremap <silent><nowait><expr> <C-b> coc#float"has_scroll() ? coc#float"scroll(0) : "\<C-b>"
+"   inoremap <silent><nowait><expr> <C-f> coc#float"has_scroll() ? "\<c-r>=coc#float"scroll(1)\<cr>" : "\<Right>"
+"   inoremap <silent><nowait><expr> <C-b> coc#float"has_scroll() ? "\<c-r>=coc#float"scroll(0)\<cr>" : "\<Left>"
+"   vnoremap <silent><nowait><expr> <C-f> coc#float"has_scroll() ? coc#float"scroll(1) : "\<C-f>"
+"   vnoremap <silent><nowait><expr> <C-b> coc#float"has_scroll() ? coc#float"scroll(0) : "\<C-b>"
+" endif
 
 " Use CTRL-S for selections ranges.
 " Requires 'textDocument/selectionRange' support of language server.
-nmap <silent> <C-s> <Plug>(coc-range-select)
-xmap <silent> <C-s> <Plug>(coc-range-select)
+" nmap <silent> <C-s> <Plug>(coc-range-select)
+" xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocActionAsync('format')
@@ -137,5 +132,5 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 nnoremap <silent><nowait> <space>hs :<C-u>CocCommand clangd.switchSourceHeader<CR>
 
-"let g:coc_
-let g:coc_default_semantic_highlight_groups=1
+" let g:coc_
+" let g:coc_default_semantic_highlight_groups=1

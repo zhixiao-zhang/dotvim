@@ -27,6 +27,7 @@ set foldmethod=manual
 set autoindent
 set showcmd
 set laststatus=0
+set shortmess+=c
 
 filetype on
 filetype indent on

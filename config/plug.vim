@@ -1,11 +1,5 @@
 vim9script
-### My plug
 call plug#begin()
-#########################
-#### UI  Enhancement ####
-#########################
-Plug 'obcat/vim-sclow'
-
 #########################
 ### Input enhancement ###
 #########################
@@ -13,6 +7,7 @@ Plug 'tpope/vim-surround'
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-eunuch'
+Plug 'tomasiser/vim-code-dark'
 
 
 #########################
