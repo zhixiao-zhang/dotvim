@@ -6,9 +6,6 @@ call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-unimpaired'
-Plug 'tpope/vim-eunuch'
-Plug 'tomasiser/vim-code-dark'
-
 
 #########################
 ### Language  Support ###
