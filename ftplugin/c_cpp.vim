@@ -19,6 +19,8 @@ command! -nargs=0 Gcmake :call s:generate_compile_commands()
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set cindent
+set smartindent
 
 syn match cOperator "=\|[=+\-*/<>!&|^]=\|==\|!=\|<=\|>=\|>>\|<<\|&&\|+\|++\|-\|--\|\[\|\]\|>\|<\|&\|*"
 

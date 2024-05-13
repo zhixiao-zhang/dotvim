@@ -17,9 +17,6 @@
   "diagnostic.virtualText": true,
   "diagnostic.enableMessage": "never",
   "clangd.disableDiagnostics": true,
-  "inlayHint.enable": false,
-  "codeLens.enable": true,
-  "coc.preferences.formatOnSave": false,
   "snippets.ultisnips.enable": true,
   "snippets.ultisnips.directories": [
     "UltiSnips",

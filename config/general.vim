@@ -4,8 +4,8 @@ set number
 set relativenumber
 set encoding=utf-8
 set expandtab
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 # set softtabstop=4
 set scrolloff=5
 
@@ -17,13 +17,9 @@ set cursorline
 set hidden
 
 set updatetime=50
-set textwidth=0
-set indentexpr=
 set autochdir
 set autowrite
 set sms
-set backspace=indent,eol,start
-set foldmethod=manual
 set autoindent
 set showcmd
 set laststatus=0

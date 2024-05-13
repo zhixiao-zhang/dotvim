@@ -52,6 +52,7 @@ hi CocErrorVirtualText guifg=#f1897f gui=NONE
 hi CocErrorSign guifg=#ff0000
 hi CocSearch guifg=#E17092
 hi link CocSemMacro Function
+hi CocInlayHint guifg=#736A6D
 
 " C 
 hi cFormat guibg=NONE guifg=#B08B35 gui=NONE
@@ -68,5 +69,4 @@ hi StatusLine guifg=#EDE8FD guibg=#E17092 gui=bold
 hi StatusLineNC guifg=#EDE8FD guibg=#E17092 gui=bold
 hi StatusLineSeparator guifg=#f5f5f5
 hi User1 guifg=#B08B35 guibg=#EDE8FD
-
 set background=light
