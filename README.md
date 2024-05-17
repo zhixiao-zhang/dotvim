@@ -41,28 +41,18 @@ Keybinding are in two parts: one for common bindings and the other for plugin's 
 
 **The leader key is space.**
 
-#### Cursor Movement
-
-| Command | Default | Description                      |
-| ------- | ------- | -------------------------------- |
-| j       | h       | move cursor to the left for one  |
-| k       | j       | move cursor down for one         |
-| l       | k       | move cursor up for one           |
-| ;       | l       | move cursor to the right for one |
-| h       | :       | enter the command mode           |
-
 #### Window Split
 
 | Command    | Default                            | Description                                                  |
 | ---------- | ---------------------------------- | ------------------------------------------------------------ |
-| sj         | :set nosplitright\<CR>:vsplit\<CR> | Vertically split the window with the cursor in the left pane. |
-| sk         | :set splitbelow\<CR>:split\<CR>    | Horizontally split the window with the cursor in the bottom pane. |
-| sl         | :set nosplitbelow\<CR>:split\<CR>  | Horizontally split the window with the cursor in the top pane. |
-| s;         | :set splitright\<CR>:split\<CR>    | Vertically split the window with the cursor in the right pane. |
-| \<leader>j | :wincmd h\<CR>                     | Move the cursor to the left pane.                            |
-| \<leader>k | :wincmd j\<CR>                     | Move the cursor to the bottom pane.                          |
-| \<leader>l | :wincmd k\<CR>                     | Move the cursor to the top pane.                             |
-| \<leader>; | :wincmd l\<CR>                     | Move the cursor to the right pane.                           |
+| sh         | :set nosplitright\<CR>:vsplit\<CR> | Vertically split the window with the cursor in the left pane. |
+| sj         | :set splitbelow\<CR>:split\<CR>    | Horizontally split the window with the cursor in the bottom pane. |
+| sk         | :set nosplitbelow\<CR>:split\<CR>  | Horizontally split the window with the cursor in the top pane. |
+| sl         | :set splitright\<CR>:split\<CR>    | Vertically split the window with the cursor in the right pane. |
+| \<leader>h | :wincmd h\<CR>                     | Move the cursor to the left pane.                            |
+| \<leader>j | :wincmd j\<CR>                     | Move the cursor to the bottom pane.                          |
+| \<leader>k | :wincmd k\<CR>                     | Move the cursor to the top pane.                             |
+| \<leader>l | :wincmd l\<CR>                     | Move the cursor to the right pane.                           |
 
 #### Tab Management
 
@@ -74,7 +64,7 @@ Keybinding are in two parts: one for common bindings and the other for plugin's 
 
 ### Plugin Bindings
 
-The plugin bindings are defined in their respective configuration files located at `.vim/plugin/{plugin's name}.vim`. To review specific key bindings, you can access the configuration files associated with each plugin, such as `coc.vim`.
+The plugin bindings are defined in their respective configuration files located at `.vim/after/plugin/{plugin's name}.vim`. To review specific key bindings, you can access the configuration files associated with each plugin, such as `coc.vim`.
 
 ## Plugin
 
@@ -88,11 +78,12 @@ For more details about to manipulate the plug, please check the [vim-plug](https
 
 ### Input Enhancement
 
-| Plugin's name                                             | Description                                                  |
-| --------------------------------------------------------- | ------------------------------------------------------------ |
-| [vim-surround](https://github.com/tpope/vim-surround)     | Delete/change/add parentheses/quotes/XML-tags/much more with ease. |
-| [wildfire](https://github.com/gcmt/wildfire.vim)          | Smart selection of the closest text object.                  |
-| [vim-unimpaired](https://github.com/tpope/vim-unimpaired) | Pairs of handy bracket mappings.                             |
+| Plugin's name                                                | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [vim-surround](https://github.com/tpope/vim-surround)        | Delete/change/add parentheses/quotes/XML-tags/much more with ease. |
+| [wildfire](https://github.com/gcmt/wildfire.vim)             | Smart selection of the closest text object.                  |
+| [vim-unimpaired](https://github.com/tpope/vim-unimpaired)    | Pairs of handy bracket mappings.                             |
+| [vim-terminal-help](https://github.com/skywind3000/vim-terminal-help) | Small changes make vim/nvim's internal terminal great again !!<br/><br/>Resources |
 
 ### Language Support
 
@@ -103,6 +94,9 @@ For more details about to manipulate the plug, please check the [vim-plug](https
 | [copilot.vim](https://github.com/github/copilot.vim)         | Neovim plugin for GitHub Copilot.                            |
 | [LeaderF](https://github.com/Yggdroot/LeaderF)               | An efficient fuzzy finder that helps to locate files, buffers, mrus, gtags, etc. on the fly for both vim and neovim. |
 | [vim-snippets](https://github.com/honza/vim-snippets)        | vim-snipmate default snippets.                               |
+| [vim-polyglot][https://github.com/sheerun/vim-polyglot]      | A solid language pack for Vim.                               |
+| [vimtex](https://github.com/lervag/vimtex)                   | VimTeX: A modern Vim and neovim filetype plugin for LaTeX files. |
+| [auto-pairs](https://github.com/jiangmiao/auto-pairs)        | Vim plugin, insert or delete brackets, parens, quotes in pair |
 
 ## License
 

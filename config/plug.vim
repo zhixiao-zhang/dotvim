@@ -6,7 +6,7 @@ call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-unimpaired'
-Plug 'voldikss/vim-floaterm'
+Plug 'skywind3000/vim-terminal-help'
 
 #########################
 ### Language  Support ###
