@@ -3,10 +3,6 @@ g:mapleader = ' '
 set number
 set relativenumber
 set encoding=utf-8
-set expandtab
-set tabstop=2
-set shiftwidth=2
-# set softtabstop=4
 set scrolloff=5
 
 set wrap
@@ -15,6 +11,8 @@ set smartcase
 set nocompatible
 set cursorline
 set hidden
+set list
+set listchars=tab:»·,trail:·,
 
 set updatetime=50
 set autochdir
