@@ -1,4 +1,6 @@
 vim9script
+# This file contains platform-independent plugins.
+# Platform-specific plugins are put into config/platform/{platform}.vim
 call plug#begin()
 #########################
 ### Input enhancement ###
@@ -21,11 +23,14 @@ Plug 'github/copilot.vim'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 #   code snippets
 Plug 'honza/vim-snippets'
-#   highlight
-Plug 'sheerun/vim-polyglot'
 #   latex
 Plug 'lervag/vimtex'
 #   auto-pair
 Plug 'jiangmiao/auto-pairs'
+
+#########################
+#### UI enhancement #####
+#########################
+Plug 'tribela/vim-transparent'
 
 call plug#end()
