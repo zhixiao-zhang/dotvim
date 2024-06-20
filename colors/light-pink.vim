@@ -8,7 +8,8 @@ endif
 
 let g:colors_name = 'light-pink'
 
-hi Normal ctermfg=188 ctermbg=235 cterm=NONE guifg=NONE guibg=#f5f5f5
+"hi Normal ctermfg=188 ctermbg=235 cterm=NONE guifg=NONE guibg=#f5f5f5
+hi Normal NONE
 hi Function ctermfg=221 ctermbg=NONE cterm=bold guifg=#9d3c5e guibg=NONE gui=bold
 hi Conditional ctermfg=172 ctermbg=NONE cterm=NONE guifg=#E17092 guibg=NONE gui=bold
 hi Type ctermfg=172 ctermbg=NONE cterm=NONE guifg=#9466AA guibg=NONE gui=bold
@@ -24,7 +25,8 @@ hi Statement ctermfg=172 ctermbg=NONE cterm=NONE guifg=#E17092 guibg=NONE gui=NO
 hi StorageClass ctermfg=172 ctermbg=NONE cterm=NONE guifg=#E17092 guibg=NONE gui=NONE
 hi Macro ctermbg=172 ctermbg=NONE cterm=bold guifg=#E17092 guibg=NONE gui=bold
 hi CursorLineNr ctermfg=NONE ctermbg=24 cterm=NONE guifg=#C46B81 guibg=NONE gui=NONE
-hi LineNr ctermfg=60 ctermbg=236 cterm=NONE guifg=#736A6D guibg=#f5f5f5 gui=NONE
+"hi LineNr ctermfg=60 ctermbg=236 cterm=NONE guifg=#736A6D guibg=#f5f5f5 gui=NONE
+hi LineNr NONE
 hi CursorLine ctermfg=NONE ctermbg=236 cterm=NONE guifg=NONE guibg=#EDE8FD gui=NONE
 hi Visual ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#D6D1E8 gui=NONE
 hi Search ctermfg=188 ctermbg=24 guifg=NONE guibg=#F3D5B9 gui=none

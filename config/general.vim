@@ -4,7 +4,6 @@ set number
 set relativenumber
 set encoding=utf-8
 set scrolloff=5
-
 set wrap
 set wildmenu # display a menu when enter vim command
 set smartcase
@@ -13,7 +12,6 @@ set cursorline
 set hidden
 set list
 set listchars=tab:»·,trail:·,
-
 set updatetime=50
 set autochdir
 set autowrite
@@ -22,6 +20,7 @@ set autoindent
 set showcmd
 set laststatus=0
 set shortmess+=c
+set backspace=indent,eol,start
 
 filetype on
 filetype indent on

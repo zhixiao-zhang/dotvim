@@ -11,7 +11,6 @@ Furthermore, my configuration is lightweight and modularized, making it straight
 - [Keybendings](#keybindings)
 - [Plugin](#plugin)
 - [License](#license)
-
 ## Requirements
 
 - vim 9.0+ (for sms) with python3 support
@@ -83,7 +82,7 @@ For more details about to manipulate the plug, please check the [vim-plug](https
 | [vim-surround](https://github.com/tpope/vim-surround)        | Delete/change/add parentheses/quotes/XML-tags/much more with ease. |
 | [wildfire](https://github.com/gcmt/wildfire.vim)             | Smart selection of the closest text object.                  |
 | [vim-unimpaired](https://github.com/tpope/vim-unimpaired)    | Pairs of handy bracket mappings.                             |
-| [vim-terminal-help](https://github.com/skywind3000/vim-terminal-help) | Small changes make vim/nvim's internal terminal great again !!<br/><br/>Resources |
+| [auto-pairs](https://github.com/jiangmiao/auto-pairs)        | Vim plugin, insert or delete brackets, parens, quotes in pair |
 
 ### Language Support
 
@@ -94,9 +93,7 @@ For more details about to manipulate the plug, please check the [vim-plug](https
 | [copilot.vim](https://github.com/github/copilot.vim)         | Neovim plugin for GitHub Copilot.                            |
 | [LeaderF](https://github.com/Yggdroot/LeaderF)               | An efficient fuzzy finder that helps to locate files, buffers, mrus, gtags, etc. on the fly for both vim and neovim. |
 | [vim-snippets](https://github.com/honza/vim-snippets)        | vim-snipmate default snippets.                               |
-| [vim-polyglot][https://github.com/sheerun/vim-polyglot]      | A solid language pack for Vim.                               |
 | [vimtex](https://github.com/lervag/vimtex)                   | VimTeX: A modern Vim and neovim filetype plugin for LaTeX files. |
-| [auto-pairs](https://github.com/jiangmiao/auto-pairs)        | Vim plugin, insert or delete brackets, parens, quotes in pair |
 
 ## License
 
