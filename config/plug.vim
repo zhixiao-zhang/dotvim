@@ -31,12 +31,11 @@ Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'honza/vim-snippets'
 #   auto-pair
 Plug 'jiangmiao/auto-pairs'
-
-call plug#end()
-
 if has('linux')
-call plug#begin()
+  # switch to english input method when leaving insert mode
   Plug 'lilydjwg/fcitx.vim'
+  # clipboard support for wayland
   Plug 'jasonccox/vim-wayland-clipboard'
-call plug#end()
 endif
+
+call plug#end()

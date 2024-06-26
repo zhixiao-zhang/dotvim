@@ -95,6 +95,12 @@ For more details about to manipulate the plug, please check the [vim-plug](https
 | [vim-snippets](https://github.com/honza/vim-snippets)        | vim-snipmate default snippets.                               |
 | [vimtex](https://github.com/lervag/vimtex)                   | VimTeX: A modern Vim and neovim filetype plugin for LaTeX files. |
 
+### Platform Specefic Plugins
+| Plugin's name                                                | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [fcitx.vim](https://github.com/lilydjwg/fcitx.vim)                          | keep and restore fcitx state when leaving/re-entering insert mode |
+| [vim-wayland-clipboard](https://github.com/jasonccox/vim-wayland-clipboard) | Integrate Vim's '+' register with the Wayland system clipboard.   |
+
 ## License
 
 [MIT](./LICENSE)
