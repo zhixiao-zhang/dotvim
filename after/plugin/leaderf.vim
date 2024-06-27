@@ -1,7 +1,7 @@
 """ leaderf
 " popup window
 let g:Lf_WindowPosition = 'popup'
-let g:Lf_CommandMap = {'<C-J>': ['<Down>', '<C-K>'], '<C-K>': ['<Up>', '<C-L>']}
+"let g:Lf_CommandMap = {'<C-J>': ['<Down>', '<C-K>'], '<C-K>': ['<Up>', '<C-L>']}
 
 " mapping
 nnoremap <silent> <leader>ff :LeaderfFile<CR>

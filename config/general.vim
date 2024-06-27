@@ -10,7 +10,6 @@ set smartcase
 set nocompatible
 set cursorline
 set hidden
-set nolist
 # set listchars=tab:»·,trail:·,
 set shiftwidth=2
 set softtabstop=2
@@ -24,6 +23,7 @@ set showcmd
 set laststatus=0
 set shortmess+=c
 set backspace=indent,eol,start
+set nolist
 
 filetype on
 filetype indent on
@@ -35,10 +35,7 @@ set incsearch
 exec "nohlsearch"
 noremap <LEADER><CR> :nohlsearch<CR>
 
-if has('termguicolors')
-    set termguicolors
-endif
-
+# Disable auto-commenting new lines
 augroup Format-Options
     autocmd!
     autocmd BufEnter * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
