@@ -19,23 +19,11 @@ Plug 'tpope/vim-unimpaired'
 #########################
 ### Language  Support ###
 #########################
-#   lsp
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 #   tags
 Plug 'ludovicchabant/vim-gutentags'
-#   Github Copilot
-Plug 'github/copilot.vim'
-#   FZF and LeaderF
-Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 #   code snippets
 Plug 'honza/vim-snippets'
 #   auto-pair
 Plug 'jiangmiao/auto-pairs'
-if has('linux')
-  # switch to english input method when leaving insert mode
-  Plug 'lilydjwg/fcitx.vim'
-  # clipboard support for wayland
-  Plug 'jasonccox/vim-wayland-clipboard'
-endif
 
 call plug#end()
