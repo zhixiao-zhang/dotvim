@@ -10,10 +10,11 @@ set smartcase
 set nocompatible
 set cursorline
 set hidden
-# set listchars=tab:»·,trail:·,
+set listchars=tab:»·,trail:·,
 set shiftwidth=2
 set softtabstop=2
 set tabstop=2
+set	expandtab
 set updatetime=50
 set autochdir
 set autowrite

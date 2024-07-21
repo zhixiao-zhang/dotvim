@@ -51,5 +51,6 @@
       ]
     }
   },
-  "semanticTokens.enable": true
+  "semanticTokens.enable": true,
+  "inlayHint.enable": false
 }

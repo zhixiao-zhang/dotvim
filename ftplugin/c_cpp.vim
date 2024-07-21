@@ -16,8 +16,7 @@ command! -nargs=0 Gcmake :call s:generate_compile_commands()
 " 记得 make clean
 
 " indent
-set cindent
-set smartindent
+set expandtab
 
 syn match cOperator "=\|[=+\-*/<>!&|^]=\|==\|!=\|<=\|>=\|>>\|<<\|&&\|+\|++\|-\|--\|\[\|\]\|>\|<\|&\|*"
 
