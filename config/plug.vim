@@ -32,6 +32,9 @@ Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'honza/vim-snippets'
 #   auto-pair
 Plug 'jiangmiao/auto-pairs'
+Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'ryanoasis/vim-devicons', { 'on':  'NERDTreeToggle' }
+
 if has('linux')
   # switch to english input method when leaving insert mode
   Plug 'lilydjwg/fcitx.vim'
