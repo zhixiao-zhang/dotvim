@@ -11,8 +11,8 @@ let g:colors_name = 'light-pink'
 "hi Normal ctermfg=188 ctermbg=235 cterm=NONE guifg=NONE guibg=#f5f5f5
 hi Normal NONE
 hi Function ctermfg=221 ctermbg=NONE cterm=bold guifg=#9d3c5e guibg=NONE gui=bold
-hi Conditional ctermfg=172 ctermbg=NONE cterm=NONE guifg=#649FC3 guibg=NONE gui=bold
-hi Type ctermfg=172 ctermbg=NONE cterm=NONE guifg=#9466AA guibg=NONE gui=bold
+hi Conditional ctermfg=172 ctermbg=NONE cterm=NONE guifg=#E17092 guibg=NONE gui=bold
+hi Type ctermfg=172 ctermbg=NONE cterm=bold guifg=#9466AA guibg=NONE gui=bold
 hi Constant ctermfg=103 ctermbg=NONE cterm=NONE guifg=#B08B35 guibg=NONE gui=NONE
 hi Comment ctermfg=244 ctermbg=NONE cterm=italic guifg=#BA9AB9 guibg=NONE gui=italic
 "hi Comment ctermfg=244 ctermbg=NONE cterm=italic guifg=#F4C7C2 guibg=NONE gui=italic
@@ -24,7 +24,7 @@ hi PreProc ctermfg=172 ctermbg=NONE cterm=NONE guifg=#E17092 guibg=NONE gui=bold
 hi Label ctermfg=103 ctermbg=NONE cterm=NONE guifg=#E17092 guibg=NONE gui=NONE
 hi Statement ctermfg=172 ctermbg=NONE cterm=NONE guifg=#E17092 guibg=NONE gui=NONE
 hi StorageClass ctermfg=172 ctermbg=NONE cterm=NONE guifg=#E17092 guibg=NONE gui=NONE
-hi Macro ctermbg=172 ctermbg=NONE cterm=bold guifg=#E17092 guibg=NONE gui=bold
+hi Macro ctermbg=172 ctermbg=NONE cterm=NONE guifg=#E17092 guibg=NONE gui=NONE
 hi CursorLineNr ctermfg=NONE ctermbg=24 cterm=NONE guifg=#C46B81 guibg=NONE gui=NONE
 "hi LineNr ctermfg=60 ctermbg=236 cterm=NONE guifg=#736A6D guibg=#f5f5f5 gui=NONE
 hi LineNr NONE
@@ -57,6 +57,8 @@ hi CocErrorVirtualText guifg=#f1897f gui=NONE
 hi CocErrorSign guifg=#ff0000
 hi CocSearch guifg=#E17092
 hi link CocSemMacro Function
+hi link CocSemTypeMacro Function
+hi link CocSemTypeClass Type
 hi CocInlayHint guifg=#736A6D
 
 " C 
