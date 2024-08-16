@@ -17,7 +17,3 @@ command! -nargs=0 Gcmake :call s:generate_compile_commands()
 
 " indent
 set expandtab
-
-syn match cOperator "=\|[=+\-*/<>!&|^]=\|==\|!=\|<=\|>=\|>>\|<<\|&&\|+\|++\|-\|--\|\[\|\]\|>\|<\|&\|*"
-
-au FileType c setlocal comments-=:// comments+=f://
