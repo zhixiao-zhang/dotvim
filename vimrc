@@ -14,7 +14,7 @@ call s:source_files('~/.vim/config/*.vim')
 
 " Platform specific settings
 if exists("s:path") == 0
-    let s:path = '~/.vim/config/platform/' . has('mac') ? 'mac' : 'linux' . '.vim'
+    let s:path = '~/.vim/config/platform/' . (has('mac') ? 'mac' : 'linux') . '.vim'
     if !empty(s:path)
         call s:source_files(s:path)
     endif
