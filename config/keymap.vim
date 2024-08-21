@@ -13,3 +13,7 @@ map <leader>l :wincmd l<CR>
 map <c-u> :tabe<CR>
 map <c-j> :-tabnext<CR>
 map <c-k> :+tabnext<CR>
+
+map <leader>hl :echo synIDattr(synIDtrans(synID(line("."), col("."), 1)), "name")<CR>
+
+imap <c-f> <Right>
