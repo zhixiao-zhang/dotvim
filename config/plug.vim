@@ -16,6 +16,8 @@ Plug 'tpope/vim-surround'
 Plug 'gcmt/wildfire.vim'
 Plug 'tpope/vim-unimpaired'
 Plug 'airblade/vim-gitgutter'
+Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-repeat'
 
 #########################
 ### Language  Support ###
@@ -30,8 +32,6 @@ Plug 'github/copilot.vim'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 #   code snippets
 Plug 'honza/vim-snippets'
-#   auto-pair
-Plug 'jiangmiao/auto-pairs'
 Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'ryanoasis/vim-devicons', { 'on':  'NERDTreeToggle' }
 
