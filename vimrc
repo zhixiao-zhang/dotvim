@@ -10,11 +10,11 @@ endfunction
 colorscheme light-pink
 
 " Source general configuration files
-call s:source_files('~/.vim/config/*.vim')
+call s:source_files('~/.config/vim/config/*.vim')
 
 " Platform specific settings
 if exists("s:path") == 0
-    let s:path = '~/.vim/config/platform/' . (has('mac') ? 'mac' : 'linux') . '.vim'
+    let s:path = '~/.config/vim/config/platform/' . (has('mac') ? 'mac' : 'linux') . '.vim'
     if !empty(s:path)
         call s:source_files(s:path)
     endif
