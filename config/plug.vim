@@ -18,6 +18,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-fugitive'
 
 #########################
 ### Language  Support ###
