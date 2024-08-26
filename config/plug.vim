@@ -24,7 +24,7 @@ Plug 'tpope/vim-fugitive'
 ### Language  Support ###
 #########################
 #   lsp
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'master'}
 #   tags
 Plug 'ludovicchabant/vim-gutentags'
 #   Github Copilot

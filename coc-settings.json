@@ -42,9 +42,20 @@
   "languageserver": {
     "haskell": {
       "command": "haskell-language-server-wrapper",
-      "args": ["--lsp"],
-      "rootPatterns": [ "*.cabal", "stack.yaml", "cabal.project", "package.yaml", "hie.yaml" ],
-      "filetypes": ["haskell", "lhaskell"],
+      "args": [
+        "--lsp"
+      ],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml",
+        "hie.yaml"
+      ],
+      "filetypes": [
+        "haskell",
+        "lhaskell"
+      ],
       "settings": {
         "haskell": {
           "checkParents": "CheckOnSave",
@@ -52,10 +63,19 @@
           "maxCompletions": 40,
           "formattingProvider": "ormolu",
           "plugin": {
-            "stan": { "globalOn": true },
-            "semanticTokens": { "globalOn": true },
-            "hlint": { "globalOn": true },
-            "ghcide-type-lenses": { "globalOn": true }
+            "stan": {
+              "globalOn": true
+            },
+            "semanticTokens": {
+              "globalOn": true
+            },
+            "hlint": {
+              "globalOn": true
+            },
+            "ghcide-type-lenses": {
+              "globalOn": true
+            }
+          }
         }
       }
     }
