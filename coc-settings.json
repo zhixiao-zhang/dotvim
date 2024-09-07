@@ -8,6 +8,10 @@
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
   "suggest.detailField": "preview",
+  "suggest.floatConfig": {
+    "border": true,
+    "rounded": true
+  },
   "diagnostic.errorSign": "\uf467",
   "diagnostic.warningSign": "\uf071",
   "diagnostic.infoSign": "\uf129",
