@@ -33,10 +33,17 @@ Plug 'github/copilot.vim'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 #   code snippets
 Plug 'honza/vim-snippets'
-Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'ryanoasis/vim-devicons', { 'on':  'NERDTreeToggle' }
 
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install', 'for': 'markdown' }
+
+# Scheme
+Plug 'Olical/vim-scheme', { 'for': 'scheme', 'on': 'SchemeConnect' }
+
+# You'll need vim-sexp too for selecting forms.
+Plug 'guns/vim-sexp'
+
+# And while you're here, tpope's bindings make vim-sexp a little nicer to use.
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
 if has('linux')
   # switch to english input method when leaving insert mode
