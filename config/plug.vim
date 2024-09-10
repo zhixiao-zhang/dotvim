@@ -18,7 +18,10 @@ Plug 'tpope/vim-unimpaired'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-fugitive'
+# You'll need vim-sexp too for selecting forms.
+Plug 'guns/vim-sexp'
+# And while you're here, tpope's bindings make vim-sexp a little nicer to use.
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
 
 #########################
 ### Language  Support ###
@@ -33,23 +36,24 @@ Plug 'github/copilot.vim'
 Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 #   code snippets
 Plug 'honza/vim-snippets'
-
+#   markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install', 'for': 'markdown' }
-
 # Scheme
 Plug 'Olical/vim-scheme', { 'for': 'scheme', 'on': 'SchemeConnect' }
 
-# You'll need vim-sexp too for selecting forms.
-Plug 'guns/vim-sexp'
+#########################
+## Outside Integration ##
+#########################
+#   git
+Plug 'tpope/vim-fugitive'
 
-# And while you're here, tpope's bindings make vim-sexp a little nicer to use.
-Plug 'tpope/vim-sexp-mappings-for-regular-people'
-
+#########################
+### Platform Specific ###
+#########################
 if has('linux')
   # switch to english input method when leaving insert mode
   Plug 'lilydjwg/fcitx.vim'
   # clipboard support for wayland
   Plug 'jasonccox/vim-wayland-clipboard'
 endif
-
 call plug#end()
