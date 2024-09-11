@@ -7,10 +7,10 @@ function! s:source_files(path) abort
   endfor
 endfunction
 
-colorscheme light-pink
-
 " Source general configuration files
 call s:source_files('~/.config/vim/config/*.vim')
+
+colorscheme everforest
 
 " Platform specific settings
 if exists("s:path") == 0

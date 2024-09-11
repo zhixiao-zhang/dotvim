@@ -22,6 +22,7 @@ Plug 'tpope/vim-repeat'
 Plug 'guns/vim-sexp'
 # And while you're here, tpope's bindings make vim-sexp a little nicer to use.
 Plug 'tpope/vim-sexp-mappings-for-regular-people'
+Plug 'sainnhe/everforest'
 
 #########################
 ### Language  Support ###
