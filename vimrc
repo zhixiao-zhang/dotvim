@@ -12,6 +12,8 @@ call s:source_files('~/.config/vim/config/*.vim')
 
 colorscheme everforest
 
+hi Normal guibg=NONE
+
 " Platform specific settings
 if exists("s:path") == 0
     let s:path = '~/.config/vim/config/platform/' . (has('mac') ? 'mac' : 'linux') . '.vim'
