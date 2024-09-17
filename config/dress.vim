@@ -4,7 +4,12 @@ if has('termguicolors')
 endif
 
 # For light version.
-set background=light
+var time = str2nr(strftime("%H"))
+if time >= 6 && time < 19
+  set background=light
+else
+  set background=dark
+endif
 
 # Set contrast.
 # This configuration option should be placed before `colorscheme everforest`.
