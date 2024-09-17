@@ -18,3 +18,7 @@ g:everforest_background = 'soft'
 
 # For better performance
 g:everforest_better_performance = 1
+
+colorscheme everforest
+
+hi Normal guibg=NONE
