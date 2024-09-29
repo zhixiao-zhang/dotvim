@@ -18,10 +18,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-repeat'
-# You'll need vim-sexp too for selecting forms.
-Plug 'guns/vim-sexp'
-# And while you're here, tpope's bindings make vim-sexp a little nicer to use.
-Plug 'tpope/vim-sexp-mappings-for-regular-people'
 Plug 'sainnhe/everforest'
 
 #########################
@@ -39,8 +35,8 @@ Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 Plug 'honza/vim-snippets'
 #   markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install', 'for': 'markdown' }
-# Scheme
-Plug 'Olical/vim-scheme', { 'for': 'scheme', 'on': 'SchemeConnect' }
+#   Coq
+Plug 'whonore/Coqtail', { 'for': 'coq' }
 
 #########################
 ## Outside Integration ##
