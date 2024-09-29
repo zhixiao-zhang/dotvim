@@ -47,3 +47,4 @@ augroup END
 
 # 打开文件时光标放在上次退出的位置
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+au BufRead *.md setf gcc-rtl
