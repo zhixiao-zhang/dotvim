@@ -22,3 +22,6 @@ g:everforest_better_performance = 1
 colorscheme everforest
 
 hi Normal guibg=NONE
+
+set laststatus=2
+set ruler
