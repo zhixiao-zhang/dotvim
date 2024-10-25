@@ -8,7 +8,6 @@ set wrap
 set wildmenu # display a menu when enter vim command
 set smartcase
 set nocompatible
-set cursorline
 set hidden
 set listchars=tab:»·,trail:·,
 set shiftwidth=2
@@ -47,4 +46,3 @@ augroup END
 
 # 打开文件时光标放在上次退出的位置
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-au BufRead *.md setf gcc-rtl
