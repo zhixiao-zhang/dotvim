@@ -24,7 +24,7 @@ Plug 'sainnhe/everforest'
 ### Language  Support ###
 #########################
 #   lsp
-Plug 'neoclide/coc.nvim', {'branch': 'master'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 #   tags
 Plug 'ludovicchabant/vim-gutentags'
 #   Github Copilot
@@ -39,18 +39,13 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install',
 Plug 'whonore/Coqtail', { 'for': 'coq' }
 
 #########################
-## Outside Integration ##
-#########################
-#   git
-Plug 'tpope/vim-fugitive'
-
-#########################
 ### Platform Specific ###
 #########################
 if has('linux')
+  # You can use the following plugins to enhance input experience on wayland
   # switch to english input method when leaving insert mode
-  Plug 'lilydjwg/fcitx.vim'
+  # Plug 'lilydjwg/fcitx.vim'
   # clipboard support for wayland
-  Plug 'jasonccox/vim-wayland-clipboard'
+  # Plug 'jasonccox/vim-wayland-clipboard'
 endif
 call plug#end()
