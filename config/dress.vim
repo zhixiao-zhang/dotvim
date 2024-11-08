@@ -3,13 +3,7 @@ if has('termguicolors')
     set termguicolors
 endif
 
-# For light version.
-var time = str2nr(strftime("%H"))
-if time >= 6 && time < 18
-  set background=dark
-else
-  set background=light
-endif
+set background=dark
 
 g:everforest_background = 'soft'
 
