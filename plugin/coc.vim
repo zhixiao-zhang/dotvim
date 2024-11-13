@@ -96,3 +96,5 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 nnoremap <silent><nowait> <space>hs :<C-u>CocCommand clangd.switchSourceHeader<CR>
 
 nmap <leader>cl  <Plug>(coc-codelens-action)
+
+autocmd User CocNvimInit hi CocFloating guibg=NONE ctermbg=NONE

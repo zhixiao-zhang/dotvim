@@ -5,17 +5,13 @@ endif
 
 set background=dark
 
-g:everforest_background = 'soft'
+augroup custom_papercolorslim_transparent_background
+  autocmd!
+  autocmd ColorScheme PaperColorSlim highlight Normal guibg=NONE
+  autocmd ColorScheme PaperColorSlim highlight Pmenu guibg=NONE
+augroup end
 
-# For better performance
-g:everforest_better_performance = 1
-
-colorscheme everforest
-
-hi Normal guibg=NONE
-hi Pmenu guibg=NONE
-hi CocFloating guibg=NONE
-hi StatusLine guibg=NONE
+colorscheme PaperColorSlim
 
 set laststatus=2
 set nocursorline
