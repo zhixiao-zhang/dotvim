@@ -3,16 +3,15 @@ if has('termguicolors')
     set termguicolors
 endif
 
-set background=dark
+set background=light
 
-augroup custom_papercolorslim_transparent_background
-  autocmd!
-  autocmd ColorScheme PaperColorSlim highlight Normal guibg=NONE
-  autocmd ColorScheme PaperColorSlim highlight Pmenu guibg=NONE
-augroup end
+# g:everforest_background = 'medium'
+# g:everforest_better_performance = 1
 
-colorscheme PaperColorSlim
+colorscheme light-pink
 
+# hi Normal guibg=NONE
+# hi StatusLine guibg=NONE
 set laststatus=2
-set nocursorline
+# set nocursorline
 set ruler

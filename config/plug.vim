@@ -16,7 +16,6 @@ Plug 'tpope/vim-unimpaired'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-repeat'
-Plug 'pappasam/papercolor-theme-slim'
 
 #########################
 ### Language  Support ###
@@ -24,26 +23,15 @@ Plug 'pappasam/papercolor-theme-slim'
 #   lsp
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 #   tags
-Plug 'ludovicchabant/vim-gutentags'
+Plug 'ludovicchabant/vim-gutentags', { 'ft': ['c', 'cpp'] }
 #   Github Copilot
 Plug 'github/copilot.vim'
 #   FZF and LeaderF
-Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension', 'on': ['LeaderfFunction', 'LeaderfMru', 'LeaderfBuffer', 'LeaderfLine', 'LeaderfTag'] }
 #   code snippets
-Plug 'honza/vim-snippets'
+Plug 'honza/vim-snippets', { 'for': ['c', 'cpp', 'python'] }
 #   markdown
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install', 'for': 'markdown' }
-#   Coq
-Plug 'whonore/Coqtail', { 'for': 'coq' }
+Plug 'skywind3000/asyncrun.vim', { 'on': 'AsyncRun' }
 
-#########################
-### Platform Specific ###
-#########################
-if has('linux')
-  # You can use the following plugins to enhance input experience on wayland
-  # switch to english input method when leaving insert mode
-  # Plug 'lilydjwg/fcitx.vim'
-  # clipboard support for wayland
-  # Plug 'jasonccox/vim-wayland-clipboard'
-endif
 call plug#end()

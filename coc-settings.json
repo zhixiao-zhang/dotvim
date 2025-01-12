@@ -20,7 +20,7 @@
   "diagnostic.checkCurrentLine": true,
   "diagnostic.virtualText": false,
   "diagnostic.enableMessage": "always",
-  "clangd.disableDiagnostics": true,
+  "clangd.disableDiagnostics": false,
   "snippets.ultisnips.enable": true,
   "snippets.ultisnips.directories": [
     "UltiSnips",
