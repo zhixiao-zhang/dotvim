@@ -35,7 +35,7 @@ hi IncSearch term=reverse ctermfg=188 ctermbg=24 guifg=NONE guibg=#F3D5B9 gui=no
 hi String ctermfg=65 ctermbg=NONE cterm=NONE guifg=#3B726C guibg=NONE gui=NONE
 hi VertSplit ctermfg=60 ctermbg=236 cterm=NONE guifg=#555555 guibg=#f5f5f5 gui=NONE
 hi Title guifg=#E17092 guibg=NONE gui=bold
-hi Error guifg=NONE guibg=#783836 gui=NONE term=NONE
+hi Error guifg=#f1897f guibg=#ffeaea gui=NONE term=NONE
 hi MatchParen guibg=gray
 hi Special guifg=#70BA89 guibg=NONE gui=NONE
 

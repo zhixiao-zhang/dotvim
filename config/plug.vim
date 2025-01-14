@@ -21,7 +21,7 @@ Plug 'tpope/vim-repeat'
 ### Language  Support ###
 #########################
 #   lsp
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release', 'event': 'BufReadPre'}
 #   tags
 Plug 'ludovicchabant/vim-gutentags', { 'ft': ['c', 'cpp'] }
 #   Github Copilot
