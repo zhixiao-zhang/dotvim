@@ -3,4 +3,4 @@ plugged
 view
 tags
 .netrwhist
-autoload/plug.vim
+pack/*

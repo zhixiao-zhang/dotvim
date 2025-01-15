@@ -24,6 +24,7 @@ set laststatus=0
 set shortmess+=c
 set backspace=indent,eol,start
 set nolist
+set nospell
 
 filetype on
 filetype indent on
@@ -33,7 +34,6 @@ filetype plugin indent on
 set hlsearch
 set incsearch
 exec "nohlsearch"
-noremap <LEADER><CR> :nohlsearch<CR>
 
 # Disable auto-commenting new lines
 augroup Format-Options

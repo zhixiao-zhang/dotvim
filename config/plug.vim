@@ -1,37 +1,28 @@
 vim9script
 
-if empty(glob('~/.config/vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+g:plugpac_plugin_conf_path = '~/.config/vim/rc/'
+g:plugpac_default_type = 'delay'
 
-call plug#begin()
-#########################
-### Input enhancement ###
-#########################
-Plug 'tpope/vim-surround'
-Plug 'gcmt/wildfire.vim'
-Plug 'tpope/vim-unimpaired'
-Plug 'airblade/vim-gitgutter'
-Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-repeat'
+plugpac#Begin({
+  status_open: 'vertical',
+  verbose: 2,
+  quiet: v:false, # show no warning if any package is not installed
+})
 
-#########################
-### Language  Support ###
-#########################
-#   lsp
-Plug 'neoclide/coc.nvim', {'branch': 'release', 'event': 'BufReadPre'}
-#   tags
-Plug 'ludovicchabant/vim-gutentags', { 'ft': ['c', 'cpp'] }
+Pack 'tpope/vim-surround'
+Pack 'gcmt/wildfire.vim'
+Pack 'tpope/vim-unimpaired'
+Pack 'airblade/vim-gitgutter'
+Pack 'jiangmiao/auto-pairs'
+Pack 'tpope/vim-repeat'
+Pack 'yegappan/lsp', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
+Pack 'ludovicchabant/vim-gutentags', { 'for': ['c', 'cpp'] }
 #   Github Copilot
-Plug 'github/copilot.vim'
-#   FZF and LeaderF
-Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension', 'on': ['LeaderfFunction', 'LeaderfMru', 'LeaderfBuffer', 'LeaderfLine', 'LeaderfTag'] }
+Pack 'github/copilot.vim', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
 #   code snippets
-Plug 'honza/vim-snippets', { 'for': ['c', 'cpp', 'python'] }
+Pack 'SirVer/ultisnips', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
+Pack 'honza/vim-snippets', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
 #   markdown
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install', 'for': 'markdown' }
-Plug 'skywind3000/asyncrun.vim', { 'on': 'AsyncRun' }
+Pack 'iamcco/markdown-preview.nvim', {'do': 'packadd markdown-preview.nvim \| call mkdp#util#install()', 'for': 'markdown' }
 
-call plug#end()
+plugpac#End()
