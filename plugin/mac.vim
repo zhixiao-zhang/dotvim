@@ -14,6 +14,8 @@ def IMEnter()
   endif
 enddef
 
-autocmd InsertLeave * if &filetype != 'markdown' | exe ':silent !/usr/local/bin/im-select com.apple.keylayout.ABC' | endif
-autocmd FileType markdown autocmd InsertLeave <buffer> call IMLeave()
-autocmd FileType markdown autocmd InsertEnter <buffer> call IMEnter()
+if (has('mac'))
+  autocmd InsertLeave * if &filetype != 'markdown' | exe ':silent !/usr/local/bin/im-select com.apple.keylayout.ABC' | endif
+  autocmd FileType markdown autocmd InsertLeave <buffer> call IMLeave()
+  autocmd FileType markdown autocmd InsertEnter <buffer> call IMEnter()
+endif

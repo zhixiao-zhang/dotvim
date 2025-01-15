@@ -55,7 +55,7 @@ const highlights = [
   { group: 'DiffAdd', fg: Colors[20], bg: '', style: '' },
   { group: 'DiffAdd', fg: '', bg: 'Gray', style: '' },
   { group: 'MatchParen', fg: '', bg: 'Gray', style: '' },
-  { group: 'ErrorMsg', fg: 'Red', bg: '', style: '' },
+  { group: 'ErrorMsg', fg: 'Red', bg: Colors[9], style: '' },
 ]
 
 const highlightlinks = [

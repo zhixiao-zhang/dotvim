@@ -13,16 +13,21 @@ Pack 'tpope/vim-surround'
 Pack 'gcmt/wildfire.vim'
 Pack 'tpope/vim-unimpaired'
 Pack 'airblade/vim-gitgutter'
-Pack 'jiangmiao/auto-pairs'
+Pack 'Eliot00/auto-pairs'
 Pack 'tpope/vim-repeat'
-Pack 'yegappan/lsp', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
+# Pack 'yegappan/lsp', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
+Pack 'neoclide/coc.nvim', { 'branch': 'release' }
 Pack 'ludovicchabant/vim-gutentags', { 'for': ['c', 'cpp'] }
 #   Github Copilot
 Pack 'github/copilot.vim', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
 #   code snippets
-Pack 'SirVer/ultisnips', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
+Pack 'SirVer/ultisnips', { 'for':  ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
 Pack 'honza/vim-snippets', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
 #   markdown
 Pack 'iamcco/markdown-preview.nvim', {'do': 'packadd markdown-preview.nvim \| call mkdp#util#install()', 'for': 'markdown' }
+Pack 'Yggdroot/LeaderF', { 'do': "packadd LeaderF \| LeaderfInstallCExtension" }
+Pack 'skywind3000/asyncrun.vim'
+Pack 'ubaldot/vim-helpme'
+Pack 'ervandew/supertab'
 
 plugpac#End()
