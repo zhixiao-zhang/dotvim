@@ -16,16 +16,18 @@ Pack 'airblade/vim-gitgutter'
 Pack 'Eliot00/auto-pairs', { type: 'start' }
 Pack 'tpope/vim-repeat'
 # Pack 'yegappan/lsp', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
-Pack 'neoclide/coc.nvim', { 'branch': 'release' }
 Pack 'ludovicchabant/vim-gutentags', { 'for': ['c', 'cpp'] }
 #   Github Copilot
-Pack 'github/copilot.vim', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
-#   code snippets
-Pack 'honza/vim-snippets', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
+Pack 'github/copilot.vim', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim', 'markdown'] }
 #   markdown
 Pack 'iamcco/markdown-preview.nvim', {'do': 'packadd markdown-preview.nvim \| call mkdp#util#install()', 'for': 'markdown' }
 Pack 'skywind3000/asyncrun.vim'
 Pack 'ubaldot/vim-helpme'
 Pack 'Donaldttt/fuzzyy'
+Pack 'yegappan/lsp', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
+Pack 'girishji/vimcomplete', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
+#   code snippets
+Pack 'hrsh7th/vim-vsnip', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
+Pack 'hrsh7th/vim-vsnip-integ', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
 
 plugpac#End()

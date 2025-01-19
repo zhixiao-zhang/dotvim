@@ -1,24 +1,29 @@
 vim9script
 g:mapleader = ' '
-map s <nop>
-map sk :set nosplitbelow<CR>:split<CR>
-map sj :set splitbelow<CR>:split<CR>
-map sh :set nosplitright<CR>:vsplit<CR>
-map sl :set splitright<CR>:vsplit<CR>
 
-map <leader>h :wincmd h<CR>
-map <leader>j :wincmd j<CR>
-map <leader>k :wincmd k<CR>
-map <leader>l :wincmd l<CR>
+const nMappings = [
+  { key: 's', mappping: '<nop>' },
+  { key: 'sk', mappping: ':set nosplitbelow<CR>:split<CR>' },
+  { key: 'sj', mappping: ':set splitbelow<CR>:split<CR>' },
+  { key: 'sh', mappping: ':set nosplitright<CR>:vsplit<CR>' },
+  { key: 'sl', mappping: ':set splitright<CR>:vsplit<CR>' },
+  { key: '<leader>h', mappping: ':wincmd h<CR>' },
+  { key: '<leader>j', mappping: ':wincmd j<CR>' },
+  { key: '<leader>k', mappping: ':wincmd k<CR>' },
+  { key: '<leader>l', mappping: ':wincmd l<CR>' },
+  { key: '<c-u>', mappping: ':tabe<CR>' },
+  { key: '<c-j>', mappping: ':-tabnext<CR>' },
+  { key: '<c-k>', mappping: ':+tabnext<CR>' },
+  { key: '<leader>hg', mappping: ':echo synIDattr(synIDtrans(synID(line("."), col("."), 1)), "name")<CR>' },
+]
 
-map <c-u> :tabe<CR>
-map <c-j> :-tabnext<CR>
-map <c-k> :+tabnext<CR>
-
-map <leader>hl :echo synIDattr(synIDtrans(synID(line("."), col("."), 1)), "name")<CR>
+for mapping in nMappings
+  execute 'map ' .. mapping.key .. ' ' .. mapping.mappping
+endfor
 
 imap <c-f> <Right>
 
-imap <silent><script><expr> <C-E> copilot#Accept("\<CR>")
+imap <silent><script><expr> <C-q> copilot#Accept("\<CR>")
 
-map <leader><CR> :nohlsearch<CR>
+autocmd FileType * noremap <buffer> <leader><CR> :nohlsearch<CR>
+autocmd FileType c,cpp,python,rust noremap <buffer> <leader><CR> :nohlsearch<CR>:LspHighlightClear<CR>
