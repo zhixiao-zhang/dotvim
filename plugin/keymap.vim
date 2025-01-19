@@ -20,3 +20,5 @@ map <leader>hl :echo synIDattr(synIDtrans(synID(line("."), col("."), 1)), "name"
 imap <c-f> <Right>
 
 imap <silent><script><expr> <C-E> copilot#Accept("\<CR>")
+
+map <leader><CR> :nohlsearch<CR>

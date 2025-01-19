@@ -73,6 +73,7 @@ const highlightlinks = [
   { from: 'Label', to: 'Keyword' },
   { from: 'StorageClass', to: 'Keyword' },
   { from: 'Structure', to: 'Keyword' },
+  { from: 'include', to: 'Keyword' },
   { from: 'ColorColumn', to: 'CursorLine' },
   { from: 'Visual', to: 'CursorLine' },
   { from: 'Number', to: 'Constant' },
