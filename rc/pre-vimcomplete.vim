@@ -6,7 +6,8 @@ var options = {
     noNewlineInCompletionEver: v:true,
     noselect: true,
     showSource: v:false
-  }
+  },
+  vsnip: { enable: true, priority: 10, maxCount: 5 },
 }
 
 autocmd User * g:VimCompleteOptionsSet(options)
