@@ -8,6 +8,7 @@ var options = {
     showSource: v:false
   },
   vsnip: { enable: true, priority: 10, maxCount: 5 },
+  vimscript: { enable: true, priority: 11 }
 }
 
-autocmd User * g:VimCompleteOptionsSet(options)
+autocmd VimEnter * timer_start(1, (_) => g:VimCompleteOptionsSet(options))

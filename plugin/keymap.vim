@@ -25,5 +25,5 @@ imap <c-f> <Right>
 
 imap <silent><script><expr> <C-q> copilot#Accept("\<CR>")
 
-autocmd FileType * noremap <buffer> <leader><CR> :nohlsearch<CR>
+noremap <leader><CR> :nohlsearch<CR>
 autocmd FileType c,cpp,python,rust noremap <buffer> <leader><CR> :nohlsearch<CR>:LspHighlightClear<CR>
