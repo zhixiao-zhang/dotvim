@@ -41,3 +41,5 @@ filetype on
 filetype indent on
 filetype plugin on
 filetype plugin indent on
+
+set guifont=Iosevka\ Nerd\ Font:h20

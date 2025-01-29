@@ -42,8 +42,13 @@ var lspServers = [
   {
     name: 'pyright',
     filetype: ['python'],
-    path: '/opt/homebrew/bin/pyright',
+    path: '/opt/homebrew/bin/pyright-langserver',
     args: ['--stdio'],
+    workspaceConfig: {
+      python: {
+        pythonPath: ''
+      }
+    }
   },
   {
     name: 'rustanalyzer',

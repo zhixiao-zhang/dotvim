@@ -13,9 +13,8 @@ Pack 'tpope/vim-surround'
 Pack 'gcmt/wildfire.vim'
 Pack 'tpope/vim-unimpaired'
 Pack 'airblade/vim-gitgutter'
-Pack 'Eliot00/auto-pairs', { type: 'start' }
+Pack 'Eliot00/auto-pairs'
 Pack 'tpope/vim-repeat'
-# Pack 'yegappan/lsp', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
 Pack 'ludovicchabant/vim-gutentags', { 'for': ['c', 'cpp'] }
 #   Github Copilot
 Pack 'github/copilot.vim'
@@ -24,7 +23,7 @@ Pack 'iamcco/markdown-preview.nvim', {'do': 'packadd markdown-preview.nvim \| ca
 Pack 'skywind3000/asyncrun.vim'
 Pack 'ubaldot/vim-helpme'
 Pack 'Donaldttt/fuzzyy'
-Pack 'yegappan/lsp', { 'for': ['c', 'cpp', 'python', 'bash', 'rust', 'markdown', 'html', 'css', 'json', 'vim'] }
+Pack 'yegappan/lsp'
 Pack 'girishji/vimcomplete'
 #   code snippets
 Pack 'hrsh7th/vim-vsnip'
