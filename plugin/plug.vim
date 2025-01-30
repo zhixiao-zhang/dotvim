@@ -16,13 +16,14 @@ Pack 'airblade/vim-gitgutter'
 Pack 'Eliot00/auto-pairs'
 Pack 'tpope/vim-repeat'
 Pack 'ludovicchabant/vim-gutentags', { 'for': ['c', 'cpp'] }
+Pack 'skywind3000/vim-quickui'
 #   Github Copilot
 Pack 'github/copilot.vim'
 #   markdown
 Pack 'iamcco/markdown-preview.nvim', {'do': 'packadd markdown-preview.nvim \| call mkdp#util#install()', 'for': 'markdown' }
 Pack 'skywind3000/asyncrun.vim'
 Pack 'ubaldot/vim-helpme'
-Pack 'Donaldttt/fuzzyy'
+Pack 'zhixiao-zhang/fuzzyy'
 Pack 'yegappan/lsp'
 Pack 'girishji/vimcomplete'
 #   code snippets

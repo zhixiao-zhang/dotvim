@@ -94,7 +94,7 @@ autocmd User LspSetup call LspAddServer(lspServers)
 augroup ResetLspHighlight
   autocmd!
   autocmd VimEnter * hi LspDiagSignWarningText guibg=#F5F5F5 cterm=NONE
-  autocmd VimEnter * hi LspDiagInlineWarning guisp=#B08B35 cterm=underline
+  autocmd VimEnter * hi LspDiagInlineWarning guisp=#B08B35 cterm=underline gui=undercurl
 augroup END
 
 noremap gD :LspGotoDeclaration<CR>

@@ -3,6 +3,7 @@ g:mapleader = ' '
 
 const nMappings = [
   { key: 's', mappping: '<nop>' },
+  { key: 'S', mappping: ':source %<CR>' },
   { key: 'sk', mappping: ':set nosplitbelow<CR>:split<CR>' },
   { key: 'sj', mappping: ':set splitbelow<CR>:split<CR>' },
   { key: 'sh', mappping: ':set nosplitright<CR>:vsplit<CR>' },
