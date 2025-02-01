@@ -71,6 +71,6 @@ command! -nargs=0 ProjectFindFile execute 'FuzzyFilesRoot ' .. g:cur_project_pat
 command! -nargs=0 ProjectFindRegexp execute 'FuzzyGrepRoot ' .. g:cur_project_path
 command! -nargs=0 ProjectFindMru execute 'FuzzyMruRoot ' .. g:cur_project_path
 command! -nargs=0 ProjectFindTag execute 'FuzzyTagsRoot ' .. g:cur_project_path
-command! -nargs=0 ProjectShell term_start(&shell, { 'cwd': g:cur_project_path, 'term_finish': 'close' })
+command! -nargs=0 ProjectShell botright call term_start(&shell, { 'cwd': g:cur_project_path, 'term_finish': 'close', 'term_rows': 10 })
 
 autocmd BufEnter * UpdateCurProject()
