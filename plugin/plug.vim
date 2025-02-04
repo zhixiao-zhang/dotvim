@@ -8,12 +8,12 @@ plugpac#Begin({
   verbose: 2,
   quiet: v:false, # show no warning if any package is not installed
 })
-
+Pack 'k-takata/minpac', { 'type': 'opt' }
 Pack 'tpope/vim-surround'
 Pack 'gcmt/wildfire.vim'
 Pack 'tpope/vim-unimpaired'
 Pack 'airblade/vim-gitgutter'
-Pack 'Eliot00/auto-pairs'
+Pack 'LunarWatcher/auto-pairs'
 Pack 'tpope/vim-repeat'
 Pack 'ludovicchabant/vim-gutentags', { 'for': ['c', 'cpp'] }
 Pack 'skywind3000/vim-quickui'

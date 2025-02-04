@@ -23,10 +23,10 @@ enddef
 const Colors = [
   '#BA9AB9', '#F1897F', '#777777', '#E17092',
   '#9466AA', '#9D3C5E', '#B08B35', '#1F6E89',
-  '#FF7AB3', '#F5F5F5', '#D6D1E8', '#736A6D',
-  '#C46B81', '#F3D5B9', '#555555', '#F2F8FC',
+  '#FF7AB3', '#F5F5F5', '#EDE8FD', '#736A6D',
+  '#C46B81', '#F3D5B9', '#555555', '#D6D1E8',
   '#93C6D6', '#FFEAEA', '#C73D20', '#B08B35',
-  '#1F6E89'
+  '#1F6E89', '#AAAAAA'
 ]
 
 const highlights = [
@@ -43,22 +43,25 @@ const highlights = [
   { group: 'String', fg: Colors[7], bg: '', style: '' },
   { group: 'StatusLine', fg: Colors[9], bg: Colors[8], style: '' },
   { group: 'SignColumn', fg: '', bg: Colors[9], style: '' },
-  { group: 'CursorLine', fg: '', bg: Colors[10], style: '' },
+  { group: 'CursorLine', fg: '', bg: Colors[10], style: 'NONE' },
+  { group: 'PmenuSel', fg: '', bg: Colors[10], style: 'NONE' },
   { group: 'LineNr', fg: Colors[11], bg: '', style: '' },
   { group: 'CursorLineNr', fg: Colors[12], bg: '', style: '' },
   { group: 'Search', fg: '', bg: Colors[13], style: '' },
   { group: 'VertSplit', fg: Colors[14], bg: Colors[9], style: '' },
-  { group: 'Pmenu', fg: '', bg: Colors[15], style: '' },
-  { group: 'PmenuSel', fg: '', bg: Colors[16], style: '' },
+  { group: 'Visual', fg: '', bg: Colors[15], style: '' },
   { group: 'DiffDelete', fg: Colors[18], bg: '', style: '' },
   { group: 'DiffChange', fg: Colors[19], bg: '', style: '' },
   { group: 'DiffAdd', fg: Colors[20], bg: '', style: '' },
+  { group: 'MatchParen', fg: '', bg: Colors[21], style: '' },
+  { group: 'Delimiter', fg: Colors[21], bg: '', style: '' },
   { group: 'DiffAdd', fg: '', bg: 'Gray', style: '' },
-  { group: 'MatchParen', fg: '', bg: 'Gray', style: '' },
   { group: 'ErrorMsg', fg: 'Red', bg: Colors[9], style: '' },
 ]
 
 const highlightlinks = [
+  { from: 'Pmenu', to: 'Normal' },
+  { from: 'PmenuSbar', to: 'Normal' },
   { from: 'NonText', to: 'Comment' },
   { from: 'Folded', to: 'Comment' },
   { from: 'Whitespace', to: 'Comment' },
@@ -78,11 +81,11 @@ const highlightlinks = [
   { from: 'Structure', to: 'Keyword' },
   { from: 'include', to: 'Keyword' },
   { from: 'ColorColumn', to: 'CursorLine' },
-  { from: 'Visual', to: 'CursorLine' },
   { from: 'Number', to: 'Constant' },
   { from: 'Wildmenu', to: 'SignColumn' },
   { from: 'IncSearch', to: 'Search' },
-  { from: 'StatusLineNC', to: 'StatusLine' }
+  { from: 'StatusLineNC', to: 'StatusLine' },
+  { from: 'PmenuThumb', to: 'MatchParen' },
 ]
 
 for hl in highlights

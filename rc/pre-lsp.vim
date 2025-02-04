@@ -2,10 +2,7 @@ vim9script
 var lspOpts = {
   autoHighlightDiags: v:true,
   autoComplete: v:false,
-  diagSignErrorText: "\uf467",
-  diagSignWarningText: "\uf071",
-  diagSignInfoText: "\uf129",
-  diagSignHintText: "\uf864",
+  completionMatcher: 'fuzzy',
   semanticHighlight: v:true,
   snippetSupport: v:true,
   #ultisnipsSupport: v:true,
@@ -93,8 +90,8 @@ autocmd User LspSetup call LspAddServer(lspServers)
 
 augroup ResetLspHighlight
   autocmd!
-  autocmd VimEnter * hi LspDiagSignWarningText guibg=#F5F5F5 cterm=NONE
-  autocmd VimEnter * hi LspDiagInlineWarning guisp=#B08B35 cterm=underline gui=undercurl
+  autocmd VimEnter * hi LspDiagSignWarningText guifg=#B08B35 cterm=NONE
+  autocmd VimEnter * hi LspDiagInlineWarning guibg=#FFEAEA cterm=underline gui=undercurl
 augroup END
 
 noremap gD :LspGotoDeclaration<CR>
