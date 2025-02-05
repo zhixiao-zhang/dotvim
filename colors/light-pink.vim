@@ -49,7 +49,7 @@ const highlights = [
   { group: 'CursorLineNr', fg: Colors[12], bg: '', style: '' },
   { group: 'Search', fg: '', bg: Colors[13], style: '' },
   { group: 'VertSplit', fg: Colors[14], bg: Colors[9], style: '' },
-  { group: 'Visual', fg: '', bg: Colors[15], style: '' },
+  { group: 'Visual', fg: 'NONE', bg: Colors[15], style: '' },
   { group: 'DiffDelete', fg: Colors[18], bg: '', style: '' },
   { group: 'DiffChange', fg: Colors[19], bg: '', style: '' },
   { group: 'DiffAdd', fg: Colors[20], bg: '', style: '' },

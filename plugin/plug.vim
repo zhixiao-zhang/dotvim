@@ -13,10 +13,10 @@ Pack 'tpope/vim-surround'
 Pack 'gcmt/wildfire.vim'
 Pack 'tpope/vim-unimpaired'
 Pack 'airblade/vim-gitgutter'
-Pack 'LunarWatcher/auto-pairs'
 Pack 'tpope/vim-repeat'
 Pack 'ludovicchabant/vim-gutentags', { 'for': ['c', 'cpp'] }
 Pack 'skywind3000/vim-quickui'
+Pack 'tmsvg/pear-tree'
 #   Github Copilot
 Pack 'github/copilot.vim'
 #   markdown
