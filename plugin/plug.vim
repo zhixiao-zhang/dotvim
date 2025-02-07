@@ -22,9 +22,8 @@ Pack 'github/copilot.vim'
 #   markdown
 Pack 'iamcco/markdown-preview.nvim', {'do': 'packadd markdown-preview.nvim \| call mkdp#util#install()', 'for': 'markdown' }
 Pack 'skywind3000/asyncrun.vim'
-Pack 'ubaldot/vim-helpme'
 Pack 'zhixiao-zhang/fuzzyy'
-Pack 'yegappan/lsp'
+Pack 'zhixiao-zhang/lsp'
 Pack 'girishji/vimcomplete'
 #   code snippets
 Pack 'hrsh7th/vim-vsnip'
