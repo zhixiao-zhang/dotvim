@@ -1,0 +1,53 @@
+{
+  "workspace.rootPatterns": [
+    ".git",
+    ".root"
+  ],
+  "suggest.noselect": true,
+  "suggest.enablePreselect": false,
+  "suggest.detailField": "preview",
+  "suggest.floatConfig": {
+    "border": true,
+    "rounded": true
+  },
+  "diagnostic.refreshOnInsertMode": false,
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.virtualText": false,
+  "diagnostic.enableMessage": "always",
+  "diagnostic.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "position": "fixed",
+    "top": 0,
+    "right": 0
+  },
+  "snippets.ultisnips.enable": true,
+  "snippets.ultisnips.directories": [
+    "UltiSnips",
+    "$HOME/.config/vim/pack/minpac/opt/vim-snippets/UltiSnips",
+    "$HOME/.config/vim/UltiSnips"
+  ],
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy",
+    "--clang-tidy-checks=performance-*,bugprone-*",
+    "--all-scopes-completion",
+    "--completion-style=detailed",
+    "--header-insertion=iwyu",
+    "--pch-storage=disk",
+    "--compile-commands-dir=${workspaceFolder}/.compile_info"
+  ],
+  "signature.enable": true,
+  "snippets.ultisnips.pythonPrompt": false,
+  "colors.enable": true,
+  "semanticTokens.enable": true,
+  "inlayHint.enable": true,
+  "codeLens.enable": true,
+  "hover.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "position": "fixed",
+    "top": 0,
+    "right": 0
+  }
+}

@@ -24,7 +24,6 @@ endfor
 
 imap <c-f> <Right>
 
-imap <silent><script><expr> <C-q> copilot#Accept("\<CR>")
+imap <silent><script><expr> <C-e> copilot#Accept("\<CR>")
 
 noremap <leader><CR> :nohlsearch<CR>
-autocmd FileType c,cpp,python,rust noremap <buffer> <leader><CR> :nohlsearch<CR>:LspHighlightClear<CR>

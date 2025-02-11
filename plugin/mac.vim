@@ -5,12 +5,12 @@ var lastStatus = 'com.apple.keylayout.ABC'
 
 def IMLeave()
   lastStatus = system('/usr/local/bin/im-select')
-  exe ':silent !/usr/local/bin/im-select com.apple.keylayout.ABC'
+  execute 'AsyncRun! -silent im-select com.apple.keylayout.ABC'
 enddef
 
 def IMEnter()
   if lastStatus != 'com.apple.keylayout.ABC'
-    exe ':silent !/usr/local/bin/im-select ' .. lastStatus
+    execute 'AsyncRun! -silent im-select ' .. lastStatus
   endif
 enddef
 

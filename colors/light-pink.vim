@@ -82,6 +82,7 @@ const highlightlinks = [
   { from: 'include', to: 'Keyword' },
   { from: 'ColorColumn', to: 'CursorLine' },
   { from: 'Number', to: 'Constant' },
+  { from: 'Boolean', to: 'Constant' },
   { from: 'Wildmenu', to: 'SignColumn' },
   { from: 'IncSearch', to: 'Search' },
   { from: 'StatusLineNC', to: 'StatusLine' },
