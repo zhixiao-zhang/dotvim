@@ -1,6 +1,6 @@
 vim9script
 
-g:plugpac_plugin_conf_path = '~/.config/vim/rc/'
+g:plugpac_plugin_conf_path = $MYVIMDIR .. 'rc/'
 g:plugpac_default_type = 'delay'
 
 plugpac#Begin({
@@ -15,13 +15,9 @@ Pack 'tpope/vim-unimpaired'
 Pack 'airblade/vim-gitgutter'
 Pack 'tpope/vim-repeat'
 Pack 'ludovicchabant/vim-gutentags', { 'for': ['c', 'cpp'] }
-Pack 'skywind3000/vim-quickui'
 Pack 'tmsvg/pear-tree'
 #   Github Copilot
 Pack 'github/copilot.vim'
-#   markdown
-Pack 'iamcco/markdown-preview.nvim', {'do': 'packadd markdown-preview.nvim \| call mkdp#util#install()', 'for': 'markdown' }
-Pack 'skywind3000/asyncrun.vim'
 Pack 'zhixiao-zhang/fuzzyy'
 Pack 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 Pack 'honza/vim-snippets'

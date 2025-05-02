@@ -24,8 +24,8 @@
   "snippets.ultisnips.enable": true,
   "snippets.ultisnips.directories": [
     "UltiSnips",
-    "$HOME/.config/vim/pack/minpac/opt/vim-snippets/UltiSnips",
-    "$HOME/.config/vim/UltiSnips"
+    "$MYVIMDIR/pack/minpac/opt/vim-snippets/UltiSnips",
+    "$MYVIMDIR/UltiSnips"
   ],
   "clangd.arguments": [
     "--background-index",
