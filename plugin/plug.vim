@@ -18,7 +18,7 @@ Pack 'ludovicchabant/vim-gutentags', { 'for': ['c', 'cpp'] }
 Pack 'tmsvg/pear-tree'
 #   Github Copilot
 Pack 'github/copilot.vim'
-Pack 'zhixiao-zhang/fuzzyy'
+Pack 'Donaldttt/fuzzyy'
 Pack 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 Pack 'honza/vim-snippets'
 # Pack 'zhixiao-zhang/lsp'
