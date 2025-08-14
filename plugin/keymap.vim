@@ -2,28 +2,34 @@ vim9script
 g:mapleader = ' '
 
 const nMappings = [
-  { key: 's', mappping: '<nop>' },
-  { key: 'S', mappping: ':source %<CR>' },
-  { key: 'sk', mappping: ':set nosplitbelow<CR>:split<CR>' },
-  { key: 'sj', mappping: ':set splitbelow<CR>:split<CR>' },
-  { key: 'sh', mappping: ':set nosplitright<CR>:vsplit<CR>' },
-  { key: 'sl', mappping: ':set splitright<CR>:vsplit<CR>' },
-  { key: '<leader>h', mappping: ':wincmd h<CR>' },
-  { key: '<leader>j', mappping: ':wincmd j<CR>' },
-  { key: '<leader>k', mappping: ':wincmd k<CR>' },
-  { key: '<leader>l', mappping: ':wincmd l<CR>' },
-  { key: '<c-u>', mappping: ':tabe<CR>' },
-  { key: '<c-j>', mappping: ':-tabnext<CR>' },
-  { key: '<c-k>', mappping: ':+tabnext<CR>' },
-  { key: '<leader>hg', mappping: ':echo synIDattr(synIDtrans(synID(line("."), col("."), 1)), "name")<CR>' },
+  { key: '<leader>h', mappping: ':wincmd h<cr>' },
+  { key: '<leader>j', mappping: ':wincmd j<cr>' },
+  { key: '<leader>k', mappping: ':wincmd k<cr>' },
+  { key: '<leader>l', mappping: ':wincmd l<cr>' },
+  { key: '<c-t>', mappping: ':tabe<cr>' },
+  { key: '<c-p>', mappping: ':-tabnext<cr>' },
+  { key: '<c-n>', mappping: ':+tabnext<cr>' },
+  { key: '<leader>hl', mappping: ':echo synIDattr(synIDtrans(synID(line("."), col("."), 1)), "name")<cr>' },
+  { key: '<leader><cr>', mappping: ':nohlsearch<cr>' },
 ]
 
 for mapping in nMappings
-  execute 'map ' .. mapping.key .. ' ' .. mapping.mappping
+  execute 'noremap ' .. mapping.key .. ' ' .. mapping.mappping
 endfor
 
-imap <c-f> <Right>
+const iMappings = [
+  { key: '<c-f>', mappping: '<Right>' },
+  { key: '<c-b>', mappping: '<Left>' },
+]
 
-imap <silent><script><expr> <C-e> copilot#Accept("\<CR>")
+for mapping in iMappings
+  execute 'inoremap ' .. mapping.key .. ' ' .. mapping.mappping
+endfor
 
-noremap <leader><CR> :nohlsearch<CR>
+const tMappings = [
+  { key: '<Esc>', mappping: '<C-\><C-n>' },
+]
+
+for mapping in tMappings
+  execute 'tnoremap ' .. mapping.key .. ' ' .. mapping.mappping
+endfor

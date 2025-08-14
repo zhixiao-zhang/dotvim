@@ -14,17 +14,8 @@ Pack 'gcmt/wildfire.vim'
 Pack 'tpope/vim-unimpaired'
 Pack 'airblade/vim-gitgutter'
 Pack 'tpope/vim-repeat'
-Pack 'ludovicchabant/vim-gutentags', { 'for': ['c', 'cpp'] }
 Pack 'tmsvg/pear-tree'
-#   Github Copilot
-Pack 'github/copilot.vim'
 Pack 'Donaldttt/fuzzyy'
 Pack 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
 Pack 'honza/vim-snippets'
-# Pack 'zhixiao-zhang/lsp'
-# Pack 'girishji/vimcomplete'
-#   code snippets
-# Pack 'hrsh7th/vim-vsnip'
-# Pack 'hrsh7th/vim-vsnip-integ'
-
 plugpac#End()

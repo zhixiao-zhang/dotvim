@@ -29,7 +29,6 @@ set shortmess+=c
 set backspace=indent,eol,start
 set nolist
 set nospell
-set laststatus=2
 set ruler
 set hlsearch
 set incsearch
