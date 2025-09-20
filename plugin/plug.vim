@@ -16,6 +16,4 @@ Pack 'airblade/vim-gitgutter'
 Pack 'tpope/vim-repeat'
 Pack 'tmsvg/pear-tree'
 Pack 'Donaldttt/fuzzyy'
-Pack 'neoclide/coc.nvim', {'branch': 'master', 'do': 'npm ci'}
-Pack 'honza/vim-snippets'
 plugpac#End()
